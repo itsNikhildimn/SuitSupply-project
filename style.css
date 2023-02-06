@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: GT America Trial;
 }
 :root{
     --font-clr:#2e2d2c;
@@ -14,6 +15,14 @@
     --p5-font-size:1em;
     --spacer:1.25rem;
 }
+body{
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+}
+img,svg,picture{
+    width: 100%;
+    display: block;
+}
 h1{
     font-size: 3.5em;
     color: var(--font-clr);
@@ -23,24 +32,34 @@ h1{
 h3{
     font-size: 1.75em;
     color: var(--font-clr);
-    font-weight: 500;
+    font-weight: 600;
 }
 span{
     font-size:1em ;
     color: #2e2d2c;
     font-weight: 400;
 }
-.footer{
-    color:var(--white-clr);
+a{
+    text-decoration: none;
 }
+li{
+    list-style: none;
+}
+section hr{
+        border: none;
+        background: rgb(107, 106, 106);
+        height: 1px;
+        opacity: 0.7;
+}
+
 .btn{
     font-size: 1em;
     font-weight: 500;
-
+    
 }
 .container{
     min-height: inherit;
-    padding:0 4.6875rem ;
+    padding:0rem 4.6875rem ;
     width: 100%;
 }
 .flex-row{
@@ -49,3 +68,177 @@ span{
 .grid-row{
     display: grid;
 }
+
+/* SECTION 6 CSS STARTS */
+.section6{
+    background-color: black;
+}
+.section6 p{
+    white-space: pre-line;
+    line-height: 1.5rem;
+    font-size: var(--p4-font-size);
+}
+.section6 p,h3,span,a{
+    color: var(--white-clr);
+}
+.findStore{
+justify-content: space-between;
+align-items: center;
+}
+.findStore .l-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1;
+}
+.findStore .r-content{
+    flex: 1;
+}
+.findStore .l-content span{
+font-size: var(--p4-font-size);
+font-weight: 600;
+}
+/* //SECTION 6 CSS ENDS */
+
+
+
+/* SECTION 7 CSS STARTS */
+.section7{
+    background-color: black;
+}
+.section7 .mail{
+    justify-content: space-between;
+    align-items: center;
+    padding:4rem 0rem;
+}
+.section7 .mail .equal{
+    flex: 1;
+}
+.section7 .mail input{
+    width: 100%;
+    padding: 1.5rem;
+    background-color:#202020 ;
+    font-size: var(--p4-font-size);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    transition: .3s ease-in-out;
+    border: 1px solid #202020;
+    color: var(--white-clr);
+}
+.section7 .mail input:hover{
+    background-color: #252525;
+    border: 1px solid #252525;
+}
+
+.section7 .r-content{
+    position: relative;
+}
+.section7 .r-content button{
+    position: absolute;
+    right: 0;
+    padding: 1.5rem;
+    outline: none;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: transparent;
+    color: var(--white-clr);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+}
+.section7 .r-content button:hover{
+    color: #898989;
+}
+/* //SECTION 7 CSS ENDS */
+
+
+/* FOOTER CSS STARTS  */
+.footer{
+    background-color: black;
+}
+.footer hr{
+    border: none;
+    background: grey;
+    height: 1px;
+}
+.foot-nav{
+    padding:5rem 0rem;
+    justify-content: space-between;
+}
+.foot-nav .l-content{
+    flex-direction: column;
+    flex: 0.5;
+    gap: 1.5rem;
+}
+.foot-nav .l-content .contact{
+    display: flex;
+    gap: 2rem;
+}
+.foot-nav .l-content a{
+    transition: color .2s ease-in-out;
+    color: var(--white-clr);
+}
+.foot-nav .l-content a:hover{
+    color: #898989;
+}
+.foot-nav .r-content{
+    flex: 1;
+    justify-content: space-between;
+}
+.foot-nav .categories{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.foot-nav .categories>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.foot-nav .categories>ul a{
+    font-size: var(--p4-font-size);
+    transition: color .2s ease-in-out;
+    color: var(--white-clr);
+}
+.foot-nav .categories>ul a:hover{
+    color: #898989;
+}
+.footer button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--white-clr);
+    text-align: left;
+    font-weight: 600;
+    font-size:var(--p4-font-size);
+}
+.footer .sustainibility{
+    display: flex;
+    gap: 1rem;
+    padding:4rem 0rem;
+}
+.footer .sustainibility>img{
+    height: 20px;
+    width:46px;
+}
+.footer .sustainibility a{
+    font-size: var(--p4-font-size);
+    font-weight: 300;
+    color: var(--white-clr);
+    transition: color .2s ease-in-out;
+}
+.footer .sustainibility a:hover{
+    color: #898989;
+}
+.footer .terms{
+    padding: 2rem 0;
+}
+.footer i{
+    font-family: FontAwesome;
+    display: inline-block;
+    color: white;
+}
+/* FOOTER CSS ENDS  */
