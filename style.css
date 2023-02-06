@@ -1,0 +1,51 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-clr:#2e2d2c;
+    --bg-clr:#efefef;
+    --white-clr:#fff;
+    --p1-font-size:3.25em;
+    --p2-font-size:1.875em;
+    --p3-font-size:1.25em;
+    --p4-font-size:0.875em;
+    --p5-font-size:1em;
+    --spacer:1.25rem;
+}
+h1{
+    font-size: 3.5em;
+    color: var(--font-clr);
+    font-weight: 500;
+}
+
+h3{
+    font-size: 1.75em;
+    color: var(--font-clr);
+    font-weight: 500;
+}
+span{
+    font-size:1em ;
+    color: #2e2d2c;
+    font-weight: 400;
+}
+.footer{
+    color:var(--white-clr);
+}
+.btn{
+    font-size: 1em;
+    font-weight: 500;
+
+}
+.container{
+    min-height: inherit;
+    padding:0 4.6875rem ;
+    width: 100%;
+}
+.flex-row{
+    display: flex;
+}
+.grid-row{
+    display: grid;
+}
