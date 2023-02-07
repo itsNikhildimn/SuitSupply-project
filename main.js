@@ -5,17 +5,19 @@ window.addEventListener("scroll",()=>{
         view.classList.add("active")
     }
        
-})
+});
 // //animation-section3
 
 
-const cta = document.querySelectorAll(".categories");
-const items = document.querySelector(".foot-Links");
-for(i=0;i<cta.length;i++){
-    cta[i].addEventListener("click",()=>{
-    this.classList.toggle("active");
+// ACCORDION
+const accordion = document.getElementsByClassName('contentBx');
+for(i=0; i<accordion.length; i++){
+    accordion[i].addEventListener('click',function(){
+    this.classList.toggle('active')
     });
 }
+// ACCORDION
+
 
 
 // FOR CHATBOX
@@ -49,7 +51,6 @@ const arrow = document.querySelector("#arrow");
 const rightslide = document.querySelector(".right-slider")
 arrow.addEventListener('click',()=>{
     rightslide.classList.add('active');
-
 })
 
 const arrow2 = document.querySelector("#shoes");
