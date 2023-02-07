@@ -37,9 +37,17 @@ span{
 }
 a{
     text-decoration: none;
+    cursor: pointer;
+}
+button{
+    margin-top: 1.6rem;
+    cursor: pointer;
 }
 li{
     list-style: none;
+}
+main .heading h3,a{
+    color: var(--font-clr);
 }
 section hr{
         border: none;
@@ -385,7 +393,7 @@ input::placeholder{
 }
 .section1 .content{
     position: absolute;
-    width: 99vw;
+    width: 100%;
     display: flex;
     padding-left: 5rem;
      justify-content: center;
@@ -402,9 +410,10 @@ input::placeholder{
 /* //section 2 */
 .section2{
     margin-bottom: 7rem;
+    padding: 0 0.5rem;
 }
 .section2 .contain{
-    padding: 0 0 0 4.6875rem ;
+    padding: 0 0 0 0rem ;
 }
 .section2 .contain .heading{
     padding-right: 4.6875rem;
@@ -618,7 +627,7 @@ transform: translate(-200px,0%);
     justify-content: center;
     flex-direction: column;
 position: absolute;
-width: 99vw;
+/* width: 99vw; */
 text-align: center;
 top: 45%;
 }
@@ -656,7 +665,7 @@ top: 45%;
     max-width: 100%;
 }
 .section4 .flex-row{
-    gap: 1.2rem;
+    gap: 0.7rem;
 }
 .section4 .container img{
     width: 100%;
@@ -678,6 +687,10 @@ top: 45%;
     display: flex;
 align-items: center;
 justify-content: space-between;
+
+}
+.section5 .container .heading a{
+    color:var(--font-clr);
 }
 .section5 .container{
     width: 100%;
