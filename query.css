@@ -1,0 +1,215 @@
+@media screen and (max-width:1200px){
+    /* section1 */
+    .section1 .content{
+     width: 100%;
+     text-align: center;
+     padding-left: 0;
+     top: 50%;
+     left: 0;
+    }
+    .section1 .content span,h1{
+        color: #fff;
+    }
+    /* section1 */
+
+
+    /* section2 */
+    .section2 .contain{
+        padding-left: 1.5rem;
+    }
+    .section2 .contain .heading{
+        padding-right:1rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    /* section2 */
+
+    /* section3 */
+    /* section3 */
+
+    /* section4 */
+    .section4 .container{
+        padding: 1rem;
+    }
+    /* section4 */
+
+    /* section5 */
+    .section5 .container{
+        padding: 2rem;
+    }
+    .section5 .container .column img{
+     height:694px ;
+      width: 538px;
+    }
+    .section5 ,.section1,.section2, .section3{
+        margin-bottom: 5rem;
+    }
+    .section4{
+        margin-bottom: -2rem;
+    }
+    .section5 .container .flex-row{
+        overflow-x: scroll;
+        padding-bottom: 1rem;
+    }
+    /* section5 */
+
+}
+@media screen and (max-width:1024px){
+    .section1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section1 .heroimg{
+        display: none;
+   
+    }
+    .section1 .heroimgnew{
+        display: block;
+        width: 100%;
+    }
+    .section1 .heroimgnew{
+        max-height: 1188px;
+    }
+    .section1 .heroimgnew img{
+    width: 100%;
+    }
+    .section1 .content{
+        width: 100%;
+        text-align: center;
+        top:100%;
+        left: 0;
+       }
+}
+@media screen and (max-width:850px){
+    /* section1 */
+    .section1 .content{
+        top: 85%;
+    }
+    /* section1 */
+    .section3 .container{
+        position: relative;
+        display: flex;
+        height: 100%;
+        padding: 2rem ;
+        align-items: center;
+        justify-content: center;
+    }
+    .section3 .expandview{
+        margin-top: 0rem;
+        height: 720px;
+        background-color: #efefef;
+    }
+    .section3 .images{
+    position: relative;
+    height: 100%;
+    transform: translate(-158px,10%);
+    }
+    .section3 .images img{
+        height: 80%;
+    }
+    .section4 .flex-row{
+        display: block;
+    }
+    /* section4 */
+    .section4 .container .text{
+       
+        top: -150px;
+    }
+    /* section4 */
+}
+@media screen and (min-width:600px ) and(max-width:850px){
+    /* section1 */
+    .section1 .content{
+        width: 50%;
+        left:40%;
+        top: 120%;
+    }
+}
+@media screen and (max-width:684px){
+    .section1 .content h1{
+  font-size: 32px !important;
+    }
+    .section3 .container{
+        position: relative;
+        display: flex;
+        height: 90%;
+        padding: 0rem ;
+        align-items: center;
+        justify-content: center;
+    }
+  
+    .section3 .expandview{
+        margin-top: 0rem;
+        max-height: 600px;
+        background-color: #efefef;
+    }
+    .section3 .images{
+    position: relative;
+    height: 100%;
+    transform: translate(-100px,20%);
+    }
+    .section3 .images img{
+        height: 60%;
+    }
+    .section5 .container{
+        padding: 1rem;
+    }
+}
+@media screen and (max-width:614px){
+    .section1 .content{
+        width: 100vw !important;       
+        left: 0%;
+       }
+ .section1 .heroimgnew{
+    display: none;
+  }
+ .section1 .heroimgmob{
+    display: block;
+  }
+ .section1 .heroimgmob img{
+   width: 100%;
+  }
+}
+@media screen and (max-width:422px){
+    .section1 .content{
+     width: 100vw !important;
+     top: 35%;
+    }
+    .section1 .content h1{
+       font-size: 35px !important;
+    }
+    .section3 .images{
+    height: 100%;
+    transform: translate(-80px,25%);
+    }
+    .section2 .contain .heading{
+        padding-right: 1rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    }
+    .section2 .contain{
+        padding: 0 0 0 0.5rem ;
+    }
+    .section3 .images img{
+        height: 50%;
+    }
+    .section5 .container .column img{
+        width:357px !important ;
+         height: 438px !important;
+       }
+       .section5 .container .column{
+        aspect-ratio: 578/694;
+    }
+}
+@media screen and (max-width:335px){
+    .section1 .content{
+        width: 100vw !important;
+        top: 50%;
+       }
+}
