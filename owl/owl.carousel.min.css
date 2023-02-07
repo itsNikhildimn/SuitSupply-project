@@ -81,6 +81,9 @@
   top: 39%;
 
 }
+.owl-carousel .owl-nav button span{
+  color:rgb(91, 91, 91);
+}
 .owl-carousel .owl-nav button.owl-prev{
   position: absolute;
   left: 0;
@@ -158,6 +161,9 @@
   position: relative;
   height: 100%;
   background: #000;
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+  background: none !important;
 }
 .owl-carousel .owl-video-play-icon {
   position: absolute;

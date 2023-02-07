@@ -51,7 +51,9 @@ const arrow = document.querySelector("#arrow");
 const rightslide = document.querySelector(".right-slider")
 arrow.addEventListener('click',()=>{
     rightslide.classList.add('active');
-})
+
+});
+
 
 const arrow2 = document.querySelector("#shoes");
 const rightslide2 = document.querySelector(".right-slider.shoes");
@@ -67,9 +69,9 @@ arrow3.addEventListener('click',()=>{
 
 })
 
-// const searchbar = document.querySelector(".srch");
-// const divactive = document.querySelector(".search-bar");
-// searchbar.addEventListener('click',()=>{
-//     divactive.classList.add('active');
-// })
+const searchbar = document.querySelector("#srch");
+const divactive = document.querySelector(".search-bar");
+searchbar.addEventListener('click',()=>{
+    divactive.classList.add('active');
+})
 // side menu //
