@@ -19,10 +19,14 @@ body{
     min-height: 100vh;
     font-family: GT America Trial;
 }
+@font-face {
+  font-family:GT America Trial ;
+  src: url("/GT-America/GT-America/GT-America-Standard-Regular-Trial.otf");
+}
 h1{
     font-size: 3.5em;
     color: var(--font-clr);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 h3{
@@ -411,14 +415,14 @@ input::placeholder{
 /* //section 2 */
 .section2{
     margin-bottom: 7rem;
-    padding: 0 0.5rem;
+    padding:0.7rem;
 }
 .section2 .contain{
     padding: 0 0 0 0rem ;
 }
 .section2 .contain .heading{
     padding-right: 4.6875rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem !important ;
     display: flex;
 align-items: center;
 justify-content: space-between;
@@ -428,6 +432,9 @@ justify-content: space-between;
 }
 .section2 .contain a{
     color: var(--font-clr);
+}
+.section2 .contain a:hover{
+    opacity: 0.6;
 }
 .section2 .contain .about .price{
     margin-top: .3rem;
@@ -646,9 +653,8 @@ top: 45%;
     margin-bottom: 1rem;
     box-sizing: border-box;
 }
-.section4 h3{
-    margin-bottom: 1.5rem;
-    font-weight: 500;
+.section4 .container .heading{
+  margin-bottom: 1rem;
 }
 .section4 .bold{
     color: var(--bg-clr);
@@ -670,11 +676,15 @@ top: 45%;
 .section4 .container img{
     width: 100%;
 }
+
 .section4 .container .text{
     text-align: center;
     position: relative;
     top: -18%;
 }
+/* .owl-theme .owl-dots .owl-dot {
+   margin-top: -0.5rem;
+} */
 /* //section 4 */
 
 
@@ -696,6 +706,7 @@ justify-content: space-between;
     width: 100%;
 }
 .section5 .column h3{
+  color:var(--font-clr);
     font-size: 14px;
 margin-top: 1rem;
 font-weight: 400;
@@ -712,227 +723,19 @@ font-weight: 600;
 .section5 .container .column{
     aspect-ratio: 578/694;
 }
+.section5 .hover:hover{
+  cursor: pointer;
+  opacity: 0.6;
+}
 .section5 .container .column img{
     width: 100%;
 }
+.owl-carousel .owl-theme .scroll{
+  overflow-x: scroll;
+}
 /* //section5 */
 
-/* media queriy for main section */
-@media screen and (max-width:1200px){
-  /* section1 */
-  .section1 .content{
-   width: 100%;
-   text-align: center;
-   padding-left: 0;
-   top: 50%;
-   left: 0;
-  }
-  .section1 .content span,h1{
-      color: #fff;
-  }
-  /* section1 */
 
-
-  /* section2 */
-  .section2 .contain{
-      padding-left: 1.5rem;
-  }
-  .section2 .contain .heading{
-      padding-right:1rem;
-      margin-bottom: 1.5rem;
-      display: flex;
-  align-items: center;
-  justify-content: space-between;
-  }
-  /* section2 */
-
-
-  /* section4 */
-  .section4 .container{
-      padding: 1rem;
-  }
-  /* section4 */
-
-  /* section5 */
-  .section5 .container{
-      padding: 2rem;
-  }
-  .section5 .container .column img{
-   height:694px ;
-    width: 538px;
-  }
-  .section5 ,.section1,.section2, .section3{
-      margin-bottom: 5rem;
-  }
-  .section4{
-      margin-bottom: -2rem;
-  }
-  .section5 .container .flex-row{
-      overflow-x: scroll;
-      padding-bottom: 1rem;
-  }
-  /* section5 */
-
-}
-@media screen and (max-width:1024px){
-  .section1{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
-  .section1 .heroimg{
-      display: none;
- 
-  }
-  .section1 .heroimgnew{
-      display: block;
-      width: 100%;
-  }
-  .section1 .heroimgnew{
-      max-height: 1188px;
-  }
-  .section1 .heroimgnew img{
-  width: 100%;
-  }
-  .section1 .content{
-      width: 100%;
-      text-align: center;
-      top:100%;
-      left: 0;
-     }
-}
-@media screen and (max-width:850px){
-  /* section1 */
-  .section1 .content{
-      top: 85%;
-  }
-  /* section1 */
-  .section3 .container{
-      position: relative;
-      display: flex;
-      height: 100%;
-      padding: 2rem ;
-      align-items: center;
-      justify-content: center;
-  }
-  .section3 .expandview{
-      margin-top: 0rem;
-      height: 720px;
-      background-color: #efefef;
-  }
-  .section3 .images{
-  position: relative;
-  height: 100%;
-  transform: translate(-158px,10%);
-  }
-  .section3 .images img{
-      height: 80%;
-  }
-  .section4 .flex-row{
-      display: block;
-  }
-  /* section4 */
-  .section4 .container .text{
-     
-      top: -150px;
-  }
-  /* section4 */
-}
-@media screen and (min-width:600px ) and(max-width:850px){
-  /* section1 */
-  .section1 .content{
-      width: 50%;
-      left:40%;
-      top: 120%;
-  }
-}
-@media screen and (max-width:684px){
-  .section1 .content h1{
-font-size: 32px !important;
-  }
-  .section3 .container{
-      position: relative;
-      display: flex;
-      height: 90%;
-      padding: 0rem ;
-      align-items: center;
-      justify-content: center;
-  }
-
-  .section3 .expandview{
-      margin-top: 0rem;
-      max-height: 600px;
-      background-color: #efefef;
-  }
-  .section3 .images{
-  position: relative;
-  height: 100%;
-  transform: translate(-100px,20%);
-  }
-  .section3 .images img{
-      height: 60%;
-  }
-  .section5 .container{
-      padding: 1rem;
-  }
-}
-@media screen and (max-width:614px){
-  .section1 .content{
-      width: 100vw !important;       
-      left: 0%;
-     }
-.section1 .heroimgnew{
-  display: none;
-}
-.section1 .heroimgmob{
-  display: block;
-}
-.section1 .heroimgmob img{
- width: 100%;
-}
-}
-@media screen and (max-width:422px){
-  .section1 .content{
-   width: 100vw !important;
-   top: 35%;
-  }
-  .section1 .content h1{
-     font-size: 35px !important;
-  }
-  .section3 .images{
-  height: 100%;
-  transform: translate(-80px,25%);
-  }
-  .section2 .contain .heading{
-      padding-right: 1rem;
-      margin-bottom: 1.5rem;
-      display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
-  }
-  .section2 .contain{
-      padding: 0 0 0 0.5rem ;
-  }
-  .section3 .images img{
-      height: 50%;
-  }
-  .section5 .container .column img{
-      width:357px !important ;
-       height: 438px !important;
-     }
-     .section5 .container .column{
-      aspect-ratio: 578/694;
-  }
-}
-@media screen and (max-width:335px){
-  .section1 .content{
-      width: 100vw !important;
-      top: 50%;
-     }
-}
-/* //media queriy for main section */
-/* //main */
 .btn {
   font-size: 1em;
   font-weight: 500;
@@ -1334,6 +1137,81 @@ a {
 
 
 /* MEDIA QUERY FOR MAIN */
+@media screen and (min-width:1200px)and (max-width:2000px){
+  .inside-left {
+transition-delay: 0.5s;
+    transition: all 0.3s ease;
+ }
+ 
+ .inside-right {
+  transition-delay: 0.5s;
+    transition: all 0.3s ease;
+ }
+ .shoulder-4-left {
+  transition-delay: 0.5s;
+     transition: all 0.3s ease;
+ }
+ .shoulder-4-right {
+  transition-delay: 0.5s;
+     transition: all 0.3s ease;
+ }
+ .shoulder-3-left {
+  transition-delay: 0.5s;
+     transition: all 0.3s ease;
+ }
+ .shoulder-3-right {
+  transition-delay: 0.5s;
+     transition: all 0.3s ease;
+ }
+ .shoulder-2-left {
+  transition-delay: 0.5s;
+     transition: all 0.3s ease;
+ }
+ .shoulder-2-right {
+  transition-delay: 0.5s;
+     transition: all 0.3s ease;
+ }
+ 
+ .shoulder-1-left {
+  transition-delay: 0.5s;
+     transition: all 0.3s ease;
+ }
+ .shoulder-1-right {
+  transition-delay: 0.5s;
+  transition: all 0.3s ease;
+ }
+ .pad-front-left {
+  transition-delay: 0.5s;
+  transition: all 0.3s ease;
+ }
+ 
+ .pad-front-right {
+  transition-delay: 0.5s;
+  transition: all 0.3s ease;
+ }
+ 
+ .half-front-left {
+  transition-delay: 0.5s;
+  transition: all 0.3s ease;
+ }
+ .half-front-right {
+  transition-delay: 0.5s;
+  transition: all 0.3s ease;
+ }
+ .front-left {
+  transition-delay: 0.5s;
+  transition: all 0.3s ease;
+ }
+ .front-right {
+  transition-delay: 0.5s;
+  transition: all 0.3s ease;
+ }
+ .collar {
+  transition-delay: 0.5s;
+  transition: all 0.3s ease;
+ }
+}
+/* media queriy for main section */
 @media screen and (max-width:1200px){
   /* section1 */
   .section1 .content{
@@ -1350,6 +1228,9 @@ a {
 
 
   /* section2 */
+  .section2{
+    padding: 0 1rem;
+  }
   .section2 .contain{
       padding-left: 0rem;
   }
@@ -1362,26 +1243,45 @@ a {
   }
   /* section2 */
 
+
   /* section4 */
   .section4 .container{
-      padding: 1rem;
+      padding: 1rem 0.7rem;
   }
+ 
+  .owl-carousel .owl-nav button span{
+    display: none;
+  }
+  .section4{
+    margin-bottom: -2rem;
+}
   /* section4 */
 
   /* section5 */
+  .section5 .container .heading{
+    padding: 0 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  }
   .section5 .container{
-      padding: 2rem;
+      padding: 0rem;
+  }
+  .section5 .container .flex-row{
+      padding:0 1rem;
   }
   .section5 .container .column img{
-   height:694px ;
-    width: 538px;
-  }
+    height:43.375rem;
+    width: 33.625rem;
+}
   .section5 ,.section1,.section2, .section3{
       margin-bottom: 5rem;
   }
-  .section4{
-      margin-bottom: -2rem;
-  }
+ .section4{
+  margin-bottom: -2rem;
+ }
   .section5 .container .flex-row{
       overflow-x: scroll;
       padding-bottom: 1rem;
@@ -1390,9 +1290,6 @@ a {
 
 }
 @media screen and (max-width:1024px){
-  .section1 .content{
-      top: 0%;
-  }
   .section1{
       display: flex;
       align-items: center;
@@ -1422,7 +1319,7 @@ a {
 @media screen and (max-width:850px){
   /* section1 */
   .section1 .content{
-      top: 55%;
+      top: 85%;
   }
   /* section1 */
   .section3 .container{
@@ -1433,11 +1330,6 @@ a {
       align-items: center;
       justify-content: center;
   }
-  /* SECTION3 */
-  main p{
-    font-size: 2rem;
-   }
-/* //SECTION3 */
   .section3 .expandview{
       margin-top: 0rem;
       height: 720px;
@@ -1454,6 +1346,9 @@ a {
   .section4 .flex-row{
       display: block;
   }
+  .section4 .container .right{
+    margin-top: -6.7rem;
+}
   /* section4 */
   .section4 .container .text{
      
@@ -1465,11 +1360,14 @@ a {
   /* section1 */
   .section1 .content{
       width: 50%;
-      left:0%;
-      top: -50%;
+      left:40%;
+      top: 120%;
   }
 }
 @media screen and (max-width:684px){
+  .section1 .content h1{
+font-size: 32px !important;
+  }
   .section3 .container{
       position: relative;
       display: flex;
@@ -1493,7 +1391,7 @@ a {
       height: 60%;
   }
   .section5 .container{
-      padding: 1rem;
+      padding: 0rem;
   }
 }
 @media screen and (max-width:614px){
@@ -1511,10 +1409,16 @@ a {
  width: 100%;
 }
 }
+@media screen and (max-width:600px){
+  .section1 .content{
+    width: 100vw !important;
+    top: 50%;
+   }
+}
 @media screen and (max-width:422px){
   .section1 .content{
-   /* width: 100vw !important; */
-   top: 0%;
+   width: 100vw !important;
+   top: 35%;
   }
   .section1 .content h1{
      font-size: 35px !important;
@@ -1522,6 +1426,10 @@ a {
   .section3 .images{
   height: 100%;
   transform: translate(-80px,25%);
+  }
+  .section3 .content:nth-child(2){
+    font-size: 2rem;
+    max-width: 70%;
   }
   .section2 .contain .heading{
       padding-right: 1rem;
@@ -1532,32 +1440,45 @@ a {
   
   }
   .section2 .contain{
-      padding: 0 0 0 0rem ;
+      padding: 0rem ;
+  }
+  .section4 .container{
+      padding: 0 1rem ;
+  }
+  .section5 .container{
+      padding: 0rem ;
   }
   .section3 .images img{
       height: 50%;
   }
   .section5 .container .column img{
-      width:357px !important ;
-       height: 438px !important;
+    width:357px  ;
+       height: 438px ;
      }
      .section5 .container .column{
       aspect-ratio: 578/694;
   }
 }
-@media screen and (max-width:335px){
+@media screen and (min-width:200px)and (max-width:335px){
   .section1 .content{
       width: 100vw !important;
       top: 50%;
      }
-}
-
-@media screen and (max-width:422px) {
-  .section1 .content{
-      top:40%;
+     .section3 .expandview{
+      margin-top: 0rem;
+      height: 720px;
+      background-color: #efefef;
   }
-  
-}
+     .section3 .images{
+      position: relative;
+      height: 100%;
+      transform: translate(-69px,30%);
+      }
+      .section3 .images img{
+          height: 42%;
+      }
+    }
+/* //media queriy for main section */
 /* /MEDIA QUERY FOR MAIN */
 
 
