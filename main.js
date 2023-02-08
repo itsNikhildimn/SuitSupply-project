@@ -1,7 +1,7 @@
 // animation-section3
 const view =document.querySelector(".expandview");
 window.addEventListener("scroll",()=>{
-    if (window.pageYOffset>1350){
+    if (window.pageYOffset>1200){
         view.classList.add("active")
     }
        
