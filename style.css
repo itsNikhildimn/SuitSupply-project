@@ -26,13 +26,13 @@ body {
   src: url("/GT-America/GT-America/GT-America-Standard-Regular-Trial.otf");
 }
 h1{
-    font-size: 3.5em;
+    font-size: 2.2em;
     color: var(--font-clr);
-    font-weight: 600;
+    font-weight: 400;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.25em;
   color: var(--font-clr);
   font-weight: 600;
 }
@@ -371,7 +371,9 @@ input:focus {
   border: none;
   border-bottom: 1px solid black;
 }
-
+.grey{
+  color: #2e2d2c;
+}
 input::placeholder {
   color: #c6c6c6;
   font-size: 1rem;
@@ -383,16 +385,15 @@ input::placeholder {
 /* section 1 */
 .section1 {
   margin-bottom: 7rem;
-  background-color: var(--bg-clr);
+  min-height: 100vh;
+}
+.section1 .heroimg{
+  position: absolute;
+  top: 0;
 }
 .section1 .heroimg img {
   width: 100%;
-}
-.section1 .heroimgnew {
-  display: none;
-}
-.section1 .heroimgmob {
-  display: none;
+
 }
 .section1 .content {
   position: absolute;
@@ -402,10 +403,10 @@ input::placeholder {
   justify-content: center;
   flex-direction: column;
   text-align: left;
-  top: 50%;
+  top: 65%;
 }
 .section1 .content h1 {
-  margin-bottom: 0.875rem;
+  margin-bottom: 0.275rem;
 }
 .section1 .content span {
   color: #202020;
@@ -444,7 +445,7 @@ justify-content: space-between;
 /* section3 */
 .section3 {
   background-color: var(--bg-clr);
-  margin-bottom: 7rem;
+  margin-bottom: 8rem;
 }
 .section3 .container {
   position: relative;
@@ -643,7 +644,41 @@ justify-content: space-between;
 }
 
 /* //section3 */
+/* SECTION-SUIT */
+.section-suit{
+position: relative;
+ margin-bottom: 7rem;
+ background-color: var(--bg-clr) ;
+ padding: 5rem 0;
 
+}
+.section-suit .container{
+  padding: 0;
+  width: 100%;
+}
+.section-suit .container .suit{
+  max-width: 100.75rem;
+margin: auto;
+}
+.section-suit .container .suit img{
+  max-width:100%;
+}
+.section-suit .container .content{
+  position: absolute;
+  left: 10%;
+  top: 55%;
+}
+.section-suit .container .content{
+ color: #fff;
+}
+.section-suit .container .content h2{
+ color: #fff;
+ font-size: 2rem;
+ font-weight: 600;
+ margin-bottom: 1rem;
+}
+
+/* //SECTION-SUIT */
 /* section 4 */
 .section4 {
   margin-bottom: 1rem;
@@ -1211,7 +1246,7 @@ transition-delay: 0.5s;
   }
   .section1 .content span,
   h1 {
-    color: #fff;
+    color:var(--font-clr);
   }
   /* section1 */
 
@@ -1277,35 +1312,36 @@ transition-delay: 0.5s;
   /* section5 */
 }
 @media screen and (max-width:1024px){
+
   .section1{
+    
       display: flex;
       align-items: center;
       justify-content: center;
   }
   .section1 .heroimg {
-    display: none;
+ /* aspect-ratio: 768/900; */
   }
-  .section1 .heroimgnew {
-    display: block;
+  .section1 .heroimg img {
     width: 100%;
-  }
-  .section1 .heroimgnew {
-    max-height: 1188px;
-  }
-  .section1 .heroimgnew img {
-    width: 100%;
+    min-height: inherit;
   }
   .section1 .content {
     width: 100%;
     text-align: center;
-    top: 100%;
+    top: 70%;
     left: 0;
   }
+}
+@media screen and (max-width:800px) {
+  .section1 .content{
+    top: 70%;
+}
 }
 @media screen and (max-width: 850px) {
   /* section1 */
   .section1 .content{
-      top: 85%;
+      top: 70%;
   }
   /* section1 */
   .section3 .container {
@@ -1329,6 +1365,20 @@ transition-delay: 0.5s;
   .section3 .images img {
     height: 80%;
   }
+  .section-suit .container .content{
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+  }
+  .section-suit .container .content h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
   .section4 .flex-row {
     display: block;
   }
@@ -1341,15 +1391,10 @@ transition-delay: 0.5s;
   }
   /* section4 */
 }
-@media screen and (min-width: 600px) and(max-width:850px) {
-  /* section1 */
-  .section1 .content{
-      width: 50%;
-      left:40%;
-      top: 120%;
-  }
-}
 @media screen and (max-width:684px){
+  .section1 .content{
+    top: 70%;
+}
   .section1 .content h1{
 font-size: 32px !important;
   }
@@ -1382,19 +1427,28 @@ font-size: 32px !important;
 @media screen and (max-width: 614px) {
   .section1 .content {
     width: 100vw !important;
-    left: 0%;
+   top: 70%;
   }
   .section1 .heroimgnew {
     display: none;
   }
   .section1 .heroimgmob {
-    display: block;
+   height: 700px;
   }
   .section1 .heroimgmob img {
     width: 100%;
   }
 }
 @media screen and (max-width:600px){
+  .section1 {
+    margin-bottom: 7rem;
+    min-height: 70vh;
+  }
+  .section1 .heroimg{
+    position: absolute;
+    top: 0;
+  
+  }
   .section1 .content{
     width: 100vw !important;
     top: 50%;
@@ -1403,7 +1457,7 @@ font-size: 32px !important;
 @media screen and (max-width:422px){
   .section1 .content{
    width: 100vw !important;
-   top: 35%;
+   top: 50%;
   }
   .section1 .content h1 {
     font-size: 35px !important;
