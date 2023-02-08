@@ -21,10 +21,10 @@ body {
   min-height: 100vh;
   font-family: GT America Trial;
 }
-@font-face {
+/* @font-face {
   font-family:GT America Trial ;
   src: url("/GT-America/GT-America/GT-America-Standard-Regular-Trial.otf");
-}
+} */
 h1{
     font-size: 2.2em;
     color: var(--font-clr);
@@ -88,7 +88,7 @@ i {
 /*  */
 /* HEADER CSS */
 .header-container {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   min-height: 3.438rem;
@@ -100,6 +100,8 @@ i {
 .header-container.hide {
   transform: translateY(-100%);
 }
+
+
 
 .header-container .flex-row {
   padding: 1rem 1.375rem;
@@ -150,15 +152,15 @@ i {
 
 .header-nav {
   position: fixed;
-  /* overflow: scroll; */
+  overflow-x: hidden;
+  overflow-y: hidden;
   top: 0;
   bottom: 0;
   left: 0;
-  overflow-x: hidden;
   background-color: var(--white-clr);
-  transform: translateX(-100%);
+  transform: translateX(-120%);
   transition: all 0.2s ease-in;
-  z-index: 170;
+  z-index: 1000;
   width: 28.375rem;
   padding: 0 2.125rem;
   min-height: 100vh;
@@ -169,12 +171,21 @@ i {
   transform: translateX(0);
 }
 
+body.active{
+  overflow-y: hidden;
+  padding-right: 1rem;
+}
+.header-nav.active main{
+  overflow: hidden;
+}
+
 .header-nav .header-nav-container {
-  padding-top: 1.125rem;
+  padding: 3.125rem 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
+  justify-content: space-between;
 }
 
 .header-nav .header-nav-search i {
@@ -182,9 +193,15 @@ i {
   font-weight: 300;
 }
 
-.header-nav img {
+/* .header-nav img {
   width: 20px;
   height: 20px;
+} */
+
+.header-nav .header-nav-content{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 
 .header-nav .flex-row {
@@ -235,10 +252,10 @@ i {
 }
 
 .header-nav-container .column {
-  margin: 2rem 0;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .header-nav-content ul:nth-of-type(3) li a {
@@ -298,9 +315,9 @@ i {
   width: 100%;
   min-height: 100vh;
   position: absolute;
-  top: -119px;
+  top: 0;
   left: 0;
-  z-index: 173;
+  z-index: 1000;
   opacity: 0;
   visibility: hidden;
   transform: translate(111%);
@@ -330,8 +347,8 @@ i {
   min-height: 100vh;
   position: absolute;
   left: 0;
-  z-index: 173;
-  padding: 0 2.125rem;
+  z-index: 1000;
+  /* padding: 0 2.125rem; */
   opacity: 0;
   visibility: hidden;
   transform: translate(111%);
@@ -800,6 +817,7 @@ span,
 a {
   color: var(--white-clr);
 }
+
 .findStore {
   justify-content: space-between;
   align-items: center;
@@ -830,6 +848,10 @@ a {
 }
 .section7 .mail .equal {
   flex: 1;
+}
+
+.section7 h3{
+  font-size: 0.815rem;
 }
 .section7 .mail input {
   width: 100%;
@@ -886,7 +908,19 @@ a {
 }
 
 /* accordion */
-.foot-Links > li {
+.foot-Links .whats{
+  display: flex;
+  gap: 2rem;
+}
+
+
+.foot-Links .email{
+  display: flex;
+  gap: 4rem;
+}
+
+
+.foot-Links  li {
   list-style: none;
   color: white;
 }
@@ -896,6 +930,10 @@ a {
   color: white;
   transition: color 0.3s ease-in-out;
 }
+.foot-Links .contact-social{
+display: flex;
+}
+
 .foot-Links a:hover {
   color: #898989;
 }
@@ -911,6 +949,7 @@ a {
   padding: 1rem 0;
   cursor: pointer;
   font-size: var(--p4-font-size);
+  margin-bottom: 1rem;
 }
 .foot-Links {
   display: flex;
@@ -1587,7 +1626,7 @@ font-size: 32px !important;
     max-height: 0;
     padding: 0rem 0;
     overflow: hidden;
-    transition:max-height 0.4s, padding 0.3s;
+    transition:max-height 0.2s, padding 0.2s;;
   }
   .accordion .contentBx.active .content {
     max-height: 400px;
