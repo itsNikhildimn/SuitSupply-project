@@ -95,6 +95,10 @@ i {
   background: var(--white-clr);
   border: 1px solid var(--bg-clr);
   z-index: 999;
+  transition:all 0.3s ease-out;
+}
+.header-container.hide {
+  transform: translateY(-100%);
 }
 
 .header-container .flex-row {
