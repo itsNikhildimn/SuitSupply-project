@@ -1,56 +1,56 @@
 // header off=set function
-(function(){
+// (function(){
 
-    var doc = document.documentElement;
-    var w   = window;
-    var curScroll;
-    var prevScroll = w.scrollY || doc.scrollTop;
-    var curDirection = 0;
-    var prevDirection = 0;
+//     var doc = document.documentElement;
+//     var w   = window;
+//     var curScroll;
+//     var prevScroll = w.scrollY || doc.scrollTop;
+//     var curDirection = 0;
+//     var prevDirection = 0;
 
     
-    var header = document.querySelector('.header-container');
-    var toggled;
-    var threshold = 200;
+//     var header = document.querySelector('.header-container');
+//     var toggled;
+//     var threshold = 200;
 
-    var checkScroll = function() {
-        curScroll = w.scrollY || doc.scrollTop;
-        if(curScroll > prevScroll) {
-            // scrolled down
-            curDirection = 2;
-        }
-        else {
-            //scrolled up
-            curDirection = 1;
-        }
+//     var checkScroll = function() {
+//         curScroll = w.scrollY || doc.scrollTop;
+//         if(curScroll > prevScroll) {
+            
+//             curDirection = 2;
+//         }
+//         else {
+            
+//             curDirection = 1;
+//         }
 
-        if(curDirection !== prevDirection) {
-            toggled = toggleHeader();
-        }
+//         if(curDirection !== prevDirection) {
+//             toggled = toggleHeader();
+//         }
 
-        prevScroll = curScroll;
-        if(toggled) {
-            prevDirection = curDirection;
-        }
-    };
+//         prevScroll = curScroll;
+//         if(toggled) {
+//             prevDirection = curDirection;
+//         }
+//     };
 
-    var toggleHeader = function() { 
-        toggled = true;
-        if(curDirection === 2 && curScroll > threshold) {
-            header.classList.add('hide');
-        }
-        else if (curDirection === 1) {
-            header.classList.remove('hide');
-        }
-        else {
-            toggled = false;
-        }
-        return toggled;
-    };
+//     var toggleHeader = function() { 
+//         toggled = true;
+//         if(curDirection === 2 && curScroll > threshold) {
+//             header.classList.add('hide');
+//         }
+//         else if (curDirection === 1) {
+//             header.classList.remove('hide');
+//         }
+//         else {
+//             toggled = false;
+//         }
+//         return toggled;
+//     };
 
-    window.addEventListener('scroll', checkScroll);
+//     window.addEventListener('scroll', checkScroll);
 
-})();
+// })();
 // header off=set function
 
 
@@ -90,15 +90,19 @@ openChatBox.classList.toggle('active')
 // Hamburger menu //
 const menuBar = document.querySelector(".icon-container");
 const slide = document.querySelector(".header-nav");
+const body =document.querySelector("body");
 
 menuBar.addEventListener('click',()=>{
     slide.classList.add('active');
+    body.classList.add("active");
 });
+
 
 const main = document.querySelector("main")
 
 main.addEventListener('click',()=>{
     slide.classList.remove('active');
+    body.classList.remove("active");
 });
 // Hamburger menu //
 
@@ -125,6 +129,22 @@ arrow3.addEventListener('click',()=>{
     rightslide3.classList.add('active');
 
 })
+
+
+const arrow4 = document.querySelector("#gift");
+const rightslide4 = document.querySelector(".right-slider.gift");
+arrow4.addEventListener('click',()=>{
+    rightslide4.classList.add('active');
+
+})
+
+const arrow5 = document.querySelector("#outlet");
+const rightslide5 = document.querySelector(".right-slider.outlet");
+arrow5.addEventListener('click',()=>{
+    rightslide5.classList.add('active');
+
+})
+
 
 const searchbar = document.querySelector("#srch");
 const divactive = document.querySelector(".search-bar");
