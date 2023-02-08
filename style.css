@@ -101,11 +101,11 @@ i{
     font-size: 1.375rem;
     cursor: pointer;
     color: var(--font-clr);
+    transition: all 5s ease-in-out;
 }
 
 .header-container .column:nth-of-type(3) i:hover{
     color:#c6c6c6;
-    transition: all 0.3s ease-in;
 }
 
 .header-container .logo-container a{
@@ -132,6 +132,10 @@ i{
 
 .header-container .icon a{
     color:var(--font-clr);
+    transition: color 0.3s ease-in-out;
+}
+.header-container .icon a:hover{
+  color:#c6c6c6;
 
 }
 
@@ -1636,6 +1640,10 @@ transition: all 0.2s ease-in;
 .footer .sustainibility {
   justify-content: center;
 }
+.faq {
+  top: 90%;
+  right: 2.5%;
+}
 }
 
 /* media query for TABLET DESIGN */
@@ -1661,6 +1669,10 @@ transition: all 0.2s ease-in;
   .terms .social-icons {
     display: none;
 }
+}
+
+@media (max-width: 388px){
+
 }
 /* /MEDIA QUERY FOR FOOTER */
 
