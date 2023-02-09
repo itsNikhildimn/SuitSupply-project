@@ -24,10 +24,10 @@ body {
   font-family: GT America Trial;
 }
 
-@font-face {
+/* @font-face {
   font-family:GT America Trial ;
   src: url("/GT-America/GT-America/GT-America-Standard-Regular-Trial.otf");
-}
+} */
 h1 {
   font-size: 2.2em;
   color: var(--font-clr);
@@ -458,7 +458,6 @@ input::placeholder {
   background: rgba(0,0,0,.3);
   transition: .4s ease-out;
 }
-
 /*  /OVERLAY */
 
 
@@ -522,7 +521,7 @@ input::placeholder {
 }
 
 .section2 .contain .heading {
-  padding: 0 4.6875rem;
+  padding-right: 4.6875rem;
   margin-bottom: 1rem !important;
   display: flex;
   align-items: center;
@@ -1454,7 +1453,7 @@ a {
   }
 
   .section2 .contain .heading {
-    padding:0 1rem;
+    padding-right: 1rem;
     margin-bottom: 1.5rem;
     display: flex;
     align-items: center;

@@ -100,7 +100,7 @@ menuBar.addEventListener('click',()=>{
 
 // when click on body then remove main slider
 
-const main = document.querySelector(".header-overlay")
+const main = document.querySelector(".header-overlay");
 
 main.addEventListener('click',()=>{
     slide.classList.remove('active');
@@ -124,6 +124,8 @@ arrow.forEach(element => {
 // side menu //
 
 
+
+
 // CLICK EVENT ON BACK ARROW TO CLOSE CURRENT SUB-MENU SLIDE
 const close = document.querySelectorAll(".header-nav-search");
  
@@ -134,3 +136,14 @@ close.forEach(element => {
     })
 });
 // CLICK EVENT ON BACK ARROW TO CLOSE CURRENT SUB-MENU SLIDE
+
+
+// REMOVE SUB MENU SLIDE WHEN CLICK ON HEADER OVERLAY //
+const main2 = document.querySelector(".header-overlay");
+main2.addEventListener("click", ()=>{
+    arrow.forEach(arr=>arr.classList.remove("active"))
+    this.classList.add("active");
+    
+})
+// REMOVE SUB MENU SLIDE WHEN CLICK ON HEADER OVERLAY //
+ 
