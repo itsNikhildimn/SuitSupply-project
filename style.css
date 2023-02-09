@@ -1436,7 +1436,6 @@ a {
     align-items: center;
     justify-content: space-between;
   }
-
   /* -------------------------------section2 */
 
 
@@ -1531,7 +1530,7 @@ a {
 
   /* ------------------------section1 */
   .section1 .content {
-    top: 70%;
+    top: 60%;
   }
   .section1 {
     margin-bottom: 7rem;
