@@ -55,7 +55,7 @@
 
 
 
-// animation-section3
+// --------------ExpandView-animation-section3
 const view =document.querySelector(".expandview");
 window.addEventListener("scroll",()=>{
     if (window.pageYOffset>1200){
@@ -63,7 +63,7 @@ window.addEventListener("scroll",()=>{
     }
        
 });
-// //animation-section3
+ // --------------//ExpandView-animation-section3
 
 
 // ACCORDION
