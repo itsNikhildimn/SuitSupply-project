@@ -1438,7 +1438,9 @@ a {
   }
   /* -------------------------------section2 */
 
-
+.section-suit {
+  margin-bottom: 5rem;
+}
   /* -------------------------------section4 */
   .section4 .container {
     padding: 1rem 0.7rem;
