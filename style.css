@@ -366,8 +366,8 @@ body.active {
   left: 0;
   z-index: 1000;
   visibility: hidden;
-  transform: translate(111%);
-  transition:all .2s cubic-bezier(.2,.4,.2,1);
+  transform: translate(120%);
+  transition:all .2s ease;
 }
 
 #arrow.active + .right-slider {
@@ -377,8 +377,7 @@ body.active {
 }
 
 .header-nav-search.active + .right-slider{
-  transform: translateX(111%);
- 
+  transform: translateX(120%);
 }
 
 .right-slider a {
