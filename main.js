@@ -87,6 +87,7 @@ openChatBox.classList.toggle('active')
 
 
 
+
 // Hamburger menu //
 const menuBar = document.querySelector(".icon-container");
 const slide = document.querySelector(".header-nav");
@@ -97,6 +98,7 @@ menuBar.addEventListener('click',()=>{
     body.classList.add("active");
 });
 
+// when click on body then remove main slider
 
 const main = document.querySelector("main")
 
@@ -104,51 +106,30 @@ main.addEventListener('click',()=>{
     slide.classList.remove('active');
     body.classList.remove("active");
 });
+// when click on body then remove main slider
+
 // Hamburger menu //
 
 
-// side menu //
-const arrow = document.querySelector("#arrow");
-const rightslide = document.querySelector(".right-slider")
-arrow.addEventListener('click',()=>{
-    rightslide.classList.add('active');
 
+
+// side menu //
+const arrow = document.querySelectorAll("#arrow");
+arrow.forEach(element => {
+    element.addEventListener("click",function(){
+        arrow.forEach(arr=>arr.classList.remove("active"))
+        this.classList.add("active")
+    })
 });
-
-
-const arrow2 = document.querySelector("#shoes");
-const rightslide2 = document.querySelector(".right-slider.shoes");
-arrow2.addEventListener('click',()=>{
-    rightslide2.classList.add('active');
-
-})
-
-const arrow3 = document.querySelector("#accessories");
-const rightslide3 = document.querySelector(".right-slider.accessories");
-arrow3.addEventListener('click',()=>{
-    rightslide3.classList.add('active');
-
-})
-
-
-const arrow4 = document.querySelector("#gift");
-const rightslide4 = document.querySelector(".right-slider.gift");
-arrow4.addEventListener('click',()=>{
-    rightslide4.classList.add('active');
-
-})
-
-const arrow5 = document.querySelector("#outlet");
-const rightslide5 = document.querySelector(".right-slider.outlet");
-arrow5.addEventListener('click',()=>{
-    rightslide5.classList.add('active');
-
-})
-
-
-const searchbar = document.querySelector("#srch");
-const divactive = document.querySelector(".search-bar");
-searchbar.addEventListener('click',()=>{
-    divactive.classList.add('active');
-})
 // side menu //
+
+
+// CLICK EVENT ON BACK ARROW TO CLOSE CURRENT SUB-MENU SLIDE
+const close = document.querySelectorAll(".header-nav-search");
+ 
+close.forEach(element => {
+    element.addEventListener("click",function(){
+        arrow.forEach(arr=>arr.classList.remove("active"))
+        this.classList.add("active")
+    })
+});
