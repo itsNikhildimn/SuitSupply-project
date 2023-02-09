@@ -410,6 +410,13 @@ input::placeholder {
   top: 0;
   right: 0;
   width: 100%;
+  overflow: hidden;
+}
+.section1 .heroimgtab{
+  display: none;
+}
+.section1 .heroimgmobile{
+  display: none;
 }
 .section1 .heroimg img {
   width: 100%;
@@ -1356,22 +1363,25 @@ transition-delay: 0.5s;
 @media screen and (max-width:1024px){
 
   .section1 {
-    margin-bottom: 7rem;
+    margin-bottom: 15rem;
     min-height: 70vh;
   }
   .section1 .heroimg{
     position: absolute;
-    top: 0;
+  /* display: none; */
   
   }
+  .section1 .heroimgtab{
+display: block;
+  }
+  .section1 .heroimgtab img {
+  width: 100%;
+}
   .section1{
     min-height: 80vh;
       display: flex;
       align-items: center;
       justify-content: center;
-  }
-  .section1 .heroimg {
- /* aspect-ratio: 768/900; */
   }
   .section1 .heroimg img {
     width: 100%;
@@ -1390,6 +1400,7 @@ transition-delay: 0.5s;
 }
 }
 @media screen and (max-width: 850px) {
+  
   /* section1 */
   .section1 .content{
       top: 70%;
@@ -1397,6 +1408,7 @@ transition-delay: 0.5s;
   .section1 {
     margin-bottom: 7rem;
     min-height: 70vh;
+    overflow: hidden;
   }
   .section1 .heroimg{
     position: absolute;
@@ -1459,13 +1471,7 @@ transition-delay: 0.5s;
   margin-bottom: 7rem;
   min-height: 70vh;
 }
-.section1 .heroimg{
-  position: absolute;
-  top: 0;
-
-}
-
-  .section1 .content h1{
+.section1 .content h1{
 font-size: 32px !important;
   }
   .section3 .container{
@@ -1499,35 +1505,25 @@ font-size: 32px !important;
     width: 100vw !important;
    top: 70%;
   }
-  .section1 .heroimgnew {
-    display: none;
-  }
-  .section1 .heroimgmob {
-   height: 700px;
-  }
-  .section1 .heroimgmob img {
-    width: 100%;
-  }
 }
 @media screen and (max-width:600px){
   .section1 {
     margin-bottom: 7rem;
     min-height: 70vh;
   }
-  .section1 .heroimg{
-    position: absolute;
-    top: 0;
-  
+  .section1 .heroimg img{
+    height: 400px;
+    width: 700px;
   }
   .section1 .content{
     width: 100vw !important;
-    top: 50%;
+    top: 70%;
    }
-}
+  }
 @media screen and (max-width:422px){
   .section1 .content{
    width: 100vw !important;
-   top: 50%;
+   top:70%;
   }
   .section1 .content h1 {
     font-size: 35px !important;
@@ -1571,7 +1567,7 @@ font-size: 32px !important;
 @media screen and (min-width:200px)and (max-width:335px){
   .section1 .content{
       width: 100vw !important;
-      top: 50%;
+      top: 70%;
      }
      .section3 .expandview{
       margin-top: 0rem;
