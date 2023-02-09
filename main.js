@@ -100,7 +100,7 @@ menuBar.addEventListener('click',()=>{
 
 // when click on body then remove main slider
 
-const main = document.querySelector("main")
+const main = document.querySelector(".header-overlay")
 
 main.addEventListener('click',()=>{
     slide.classList.remove('active');
@@ -133,3 +133,4 @@ close.forEach(element => {
         this.classList.add("active")
     })
 });
+// CLICK EVENT ON BACK ARROW TO CLOSE CURRENT SUB-MENU SLIDE

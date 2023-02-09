@@ -195,7 +195,7 @@ i {
   left: 0;
   background-color: var(--white-clr);
   transform: translateX(-120%);
-  transition: all 0.2s ease-in;
+  transition:transform .4s cubic-bezier(.2,.4,.2,1);
   z-index: 1000;
   width: 28.375rem;
   padding: 0 2.125rem;
@@ -206,7 +206,6 @@ i {
 .header-nav.active {
   transform: translateX(0);
 }
-
 body.active {
   overflow-y: hidden;
   padding-right: 1rem;
@@ -226,14 +225,18 @@ body.active {
 }
 
 .header-nav .header-nav-search i {
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 300;
+  cursor: pointer;
+  opacity: 0.7;
+  transition:all .4s cubic-bezier(.2,.4,.2,1);
 }
 
-/* .header-nav img {
-  width: 20px;
-  height: 20px;
-} */
+.header-nav .header-nav-search i:hover {
+  opacity: .4;
+}
+
+
 
 .header-nav .header-nav-content {
   display: flex;
@@ -266,6 +269,13 @@ body.active {
 }
 
 .header-nav a {
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: var(--font-clr);
+  transition: all 0.3s ease;
+}
+
+.header-nav li {
   font-size: 1.125rem;
   font-weight: 300;
   color: var(--font-clr);
@@ -318,12 +328,12 @@ body.active {
   position: absolute;
   left: 20.5%;
   top: 35%;
-  /* margin-top: -5px; */
   width: 1px;
   height: 10px;
   background-color: #c6c6c6;
   pointer-events: none;
   display: block;
+
 }
 
 /* right slider nav */
@@ -355,10 +365,9 @@ body.active {
   top: 0;
   left: 0;
   z-index: 1000;
-  opacity: 0;
   visibility: hidden;
   transform: translate(111%);
-  transition: all 0.2s ease-in;
+  transition:all .2s cubic-bezier(.2,.4,.2,1);
 }
 
 #arrow.active + .right-slider {
@@ -369,6 +378,7 @@ body.active {
 
 .header-nav-search.active + .right-slider{
   transform: translateX(111%);
+ 
 }
 
 .right-slider a {
@@ -385,7 +395,6 @@ body.active {
   position: absolute;
   left: 0;
   z-index: 1000;
-  /* padding: 0 2.125rem; */
   opacity: 0;
   visibility: hidden;
   transform: translate(111%);
@@ -398,11 +407,6 @@ body.active {
   transform: translate(0%);
 }
 
-/* .search-bar.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(0%);
-} */
 
 .search-bar input {
   border: none;
@@ -443,6 +447,20 @@ input::placeholder {
 }
 
 /* search div */
+
+/*  OVERLAY */
+.header-nav.active + .header-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.3);
+  transition: .4s ease-out;
+}
+
+/*  /OVERLAY */
+
 
 /* main */
 
