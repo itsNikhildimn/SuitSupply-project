@@ -982,6 +982,7 @@ a {
 .foot-Links li {
   list-style: none;
   color: white;
+  opacity: 0.8;
 }
 .foot-Links a {
   font-size: var(--p4-font-size);
@@ -1007,12 +1008,11 @@ a {
   padding: 1rem 0;
   cursor: pointer;
   font-size: var(--p4-font-size);
-  margin-bottom: 1rem;
 }
 .foot-Links {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 /* ACCORDION ENDS */
 
@@ -1864,14 +1864,9 @@ a {
   .terms .social-icons {
     display: none;
   }
+  .accordion .label {
+    padding: 0.6rem 0;
 }
-
-@media (max-height: 797px) {
-  .pop-up {
-    height: 36rem;
-    left: -495%;
-    top: -589px;
-  }
 }
 
 /* <<<<<<<-----MEDIA QUERY FOR FOOTER ENDS----->>>>>>> */
