@@ -1,4 +1,6 @@
-// header off=set function
+//<<<<<<<<<<<----------HEADER JS FUNCTIONS---------------->>>>>>>>>>>>>>>>>>
+
+// HEADER OFF-SET FUNCTION
 (function(){
 
     var doc = document.documentElement;
@@ -51,44 +53,10 @@
     window.addEventListener('scroll', checkScroll);
 
 })();
-// header off=set function
+// //HEADER OFF-SET FUNCTION 
 
 
-
-// --------------ExpandView-animation-section3
-const view =document.querySelector(".expandview");
-window.addEventListener("scroll",()=>{
-    if (window.pageYOffset>1200){
-        view.classList.add("active")
-    }
-       
-});
- // --------------//ExpandView-animation-section3
-
-
-// ACCORDION
-const accordion = document.getElementsByClassName('contentBx');
-for(i=0; i<accordion.length; i++){
-    accordion[i].addEventListener('click',function(){
-    this.classList.toggle('active')
-    });
-}
-// ACCORDION
-
-
-
-// FOR CHATBOX
-const openChatBox = document.querySelector(".faq-icon")
-const chatBox = document.querySelector(".pop-up");
-openChatBox.addEventListener("click",()=>{
-chatBox.classList.toggle('active')
-openChatBox.classList.toggle('active')
-});
-
-
-
-
-// Hamburger menu //
+// FOR HAMBUGER MENU //
 const menuBar = document.querySelector(".icon-container");
 const slide = document.querySelector(".header-nav");
 const body =document.querySelector("body");
@@ -97,23 +65,9 @@ menuBar.addEventListener('click',()=>{
     slide.classList.add('active');
     body.classList.add("active");
 });
+// FOR TOGGLING HAMBUGER MENU //
 
-// when click on body then remove main slider
-
-const main = document.querySelector(".header-overlay");
-
-main.addEventListener('click',()=>{
-    slide.classList.remove('active');
-    body.classList.remove("active");
-});
-// when click on body then remove main slider
-
-// Hamburger menu //
-
-
-
-
-// side menu //
+// FOR OPENING SUB-MENU SLIDE //
 const arrow = document.querySelectorAll("#arrow");
 arrow.forEach(element => {
     element.addEventListener("click",function(){
@@ -121,10 +75,7 @@ arrow.forEach(element => {
         this.classList.add("active")
     })
 });
-// side menu //
-
-
-
+// FOR OPENING SUB-MENU SLIDE //
 
 // CLICK EVENT ON BACK ARROW TO CLOSE CURRENT SUB-MENU SLIDE
 const close = document.querySelectorAll(".header-nav-search");
@@ -137,6 +88,14 @@ close.forEach(element => {
 });
 // CLICK EVENT ON BACK ARROW TO CLOSE CURRENT SUB-MENU SLIDE
 
+// when click on OVERLAY then remove main slider
+const main = document.querySelector(".header-overlay");
+
+main.addEventListener('click',()=>{
+    slide.classList.remove('active');
+    body.classList.remove("active");
+});
+// when click on OVERLAY then remove main slider
 
 // REMOVE SUB MENU SLIDE WHEN CLICK ON HEADER OVERLAY //
 const main2 = document.querySelector(".header-overlay");
@@ -146,4 +105,48 @@ main2.addEventListener("click", ()=>{
     
 })
 // REMOVE SUB MENU SLIDE WHEN CLICK ON HEADER OVERLAY //
+
+//<<<<<<<<<<<----------HEADER JS FUNCTIONS ENDS---------------->>>>>>>>>>>>>>>>>>
+
+
+
+//<<<<<<<<<<<----------MAIN SECTION JS FUNCTIONS---------------->>>>>>>>>>>>>
+
+// --------------ExpandView-animation-section3
+const view =document.querySelector(".expandview");
+window.addEventListener("scroll",()=>{
+    if (window.pageYOffset>1200){
+        view.classList.add("active")
+    }
+       
+});
+ // --------------//ExpandView-animation-section3
+
+//<<<<<<<<<<<----------MAIN SECTION JS FUNCTIONS EDNS---------------->>>>>>>>>>>>>
  
+
+
+
+//<<<<<<<<<<<----------FOOTER JS FUNCTIONS---------------->>>>>>>>>>>>>>>>>>
+
+// ACCORDION FOR FOOTER SECTION
+const accordion = document.getElementsByClassName('contentBx');
+for(i=0; i<accordion.length; i++){
+    accordion[i].addEventListener('click',function(){
+    this.classList.toggle('active')
+    });
+}
+// ACCORDION FOR FOOTER SECTION
+
+
+
+// FOR POP-UP CHATBOX
+const openChatBox = document.querySelector(".faq-icon")
+const chatBox = document.querySelector(".pop-up");
+openChatBox.addEventListener("click",()=>{
+    chatBox.classList.toggle('active')
+    openChatBox.classList.toggle('active')
+});
+// /FOR POP-UP CHATBOX
+
+//<<<<<<<<<<<----------FOOTER JS FUNCTIONS ENDS---------------->>>>>>>>>>>>>>>>>>
