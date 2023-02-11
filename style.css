@@ -21,7 +21,15 @@
 body {
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
-  font-family: GT America Trial;
+  font-family: myfont;
+}
+@font-face {
+  font-family:myfont ;
+  src: url(/Founders_Grotesk/FoundersGroteskCond-Lt.otf),
+       url(/Founders_Grotesk/FoundersGrotesk-Regular.otf),
+       url(/Founders_Grotesk/FoundersGrotesk-Medium.otf),
+       url(/Founders_Grotesk/FoundersGroteskXCond-Bold.otf)
+  ;
 }
 h1 {
   font-size: 2.2em;
@@ -129,7 +137,7 @@ i {
 }
 
 .header-container .flex-row {
-  padding: 1rem 1.375rem;
+  padding: 0.5rem 1.375rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -145,18 +153,8 @@ i {
   color: #c6c6c6;
 }
 
-.header-container .logo-container a {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
-  width: 9.375rem;
-  padding: 5px 10px;
-}
-
 .header-container .logo-container a img {
-  width: 140px;
+  width: 210px;
 }
 
 .header-container .icon {
@@ -864,44 +862,6 @@ input::placeholder {
 
 /* ------------------------------//section5 */
 /* <<<<<<<<<<----------MAIN SECTION CSS ENDS--------->>>>>>>> */
-
-/* SECTION 6 CSS STARTS */
-.section6 {
-  background-color: black;
-}
-.section6 p {
-  white-space: pre-line;
-  line-height: 1.5rem;
-  font-size: var(--p4-font-size);
-}
-.section6 .r-content img {
-  width: 100%;
-}
-.section6 p,
-h3,
-span,
-a {
-  color: var(--white-clr);
-}
-.findStore {
-  justify-content: space-between;
-  align-items: center;
-}
-.findStore .l-content {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  flex: 1;
-}
-.findStore .r-content {
-  flex: 1;
-}
-.findStore .l-content span {
-  font-size: var(--p4-font-size);
-  font-weight: 600;
-}
-/* //SECTION 6 CSS ENDS */
-
 /* SECTION 7 CSS STARTS */
 .section7 {
   background-color: black;
@@ -909,13 +869,14 @@ a {
 .section7 .mail {
   justify-content: space-between;
   align-items: center;
-  padding: 4rem 0rem;
+  padding: 3rem 0rem;
 }
 .section7 .mail .equal {
   flex: 1;
 }
 .section7 h3 {
   font-size: 0.815rem;
+  color: white;
 }
 .section7 .mail input {
   width: 100%;
@@ -1746,20 +1707,6 @@ a {
   .container {
     padding: 0rem 4rem;
   }
-
-  .findStore {
-    align-items: flex-start;
-    flex-direction: column-reverse;
-  }
-
-  .findStore .l-content {
-    padding: 4rem;
-  }
-
-  .section6 .container {
-    padding: 0;
-  }
-
   .section7 .mail {
     flex-direction: column;
     gap: 2rem;
