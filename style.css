@@ -35,25 +35,23 @@ h1 {
   font-size: var(--h1-font-size);
   color: var(--font-clr);
   font-weight: 400;
+  color: var(--white-clr);
+  margin-bottom: 0.275rem;
 }
-
 h3 {
   font-size: var(--h3-font-size);
   color: var(--font-clr);
   font-weight: 600;
 }
-
 span {
+  color:var(--white-clr);
   font-size: 1em;
-  color: #2e2d2c;
   font-weight: 400;
 }
-
 a {
   text-decoration: none;
   cursor: pointer;
 }
-
 button {
   margin-top: 1.6rem;
   cursor: pointer;
@@ -62,42 +60,34 @@ button {
   font-size: 1em;
   font-weight: 500;
 }
-
 .container {
   min-height: inherit;
   padding: 0rem 4.6875rem;
   width: 100%;
 }
-
 .flex-row {
   display: flex;
 }
-
 .grid-row {
   display: grid;
 }
-
 li {
   list-style: none;
 }
-
 main .heading h3,
 a {
   color: var(--font-clr);
 }
-
 section hr {
   border: none;
   background: rgb(107, 106, 106);
   height: 1px;
   opacity: 0.7;
 }
-
 i {
   font-family: FontAwesome;
   font-style: normal;
 }
-
 .btn button {
   font-size: 1em;
   font-weight: 600;
@@ -105,20 +95,18 @@ i {
   border: none;
   background-color: transparent;
 }
-
 .container {
   min-height: inherit;
   padding: 0rem 4.6875rem;
   width: 100%;
 }
-
 .flex-row {
   display: flex;
 }
-
 .grid-row {
   display: grid;
 }
+
 
 /* ----------------text-slider------------- */
 .text-slider{
@@ -486,29 +474,26 @@ input::placeholder {
 /* <<<<<<<<<<----------MAIN SECTION CSS STARTS--------->>>>>>>> */
 
 /* --------------------------------section 1 */
+
+
 .section1 {
   margin-bottom: 7rem;
 }
-
 .section1 .heroimg {
   top: 0;
   right: 0;
   width: 100%;
   overflow: hidden;
 }
-
 .section1 .heroimgtab {
   display: none;
 }
-
 .section1 .heroimgmobile {
   display: none;
 }
-
 .section1 .heroimg img {
   width: 100%;
 }
-
 .section1 .content {
   position: absolute;
   width: 100%;
@@ -519,48 +504,33 @@ input::placeholder {
   text-align: left;
   top: 65%;
 }
-
-.section1 .content h1 {
-  color: var(--white-clr);
-  margin-bottom: 0.275rem;
-}
-
-.section1 .content span {
-  color:var(--white-clr);
-}
-
 /* ---------------------//section 1 */
+
 
 /* ---------------------section 2 */
 .section2 {
   margin-bottom: 7rem;
   padding: 0.7rem;
 }
-
 .section2 .contain {
   padding: 0 0 0 0rem;
 }
-
 .section2 .contain .heading {
-  margin-bottom: 1rem !important;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .section2 .contain .about {
   padding-top: 12px;
 }
-
 .section2 .contain .about a:nth-of-type(1) {
   color: var(--font-clr);
   transition: opacity 0.3s ease;
 }
-
 .section2 .contain .about a:nth-of-type(1):hover {
   opacity: 0.6;
 }
-
 .section2 .contain .about .price {
   margin-top: 0.3rem;
   color: gray;
@@ -571,6 +541,9 @@ input::placeholder {
 
 /* section3 */
 /* ------------------------SECTION-SUIT */
+.white{
+  color: var(--white-clr);
+}
 .section3 {
   position: relative;
   margin-bottom: 7rem;
@@ -592,16 +565,6 @@ input::placeholder {
   left: 5%;
   top: 55%;
 }
-.section3 .container .content {
-  color: #fff;
-}
-.section3 .container .content h1 {
-  color: #fff;
-}
-.section3 .container .content span{
-  color: var(--white-clr);
-}
-
 /* ------------------------//SECTION-SUIT */
 /* section3 */
 
@@ -616,14 +579,10 @@ input::placeholder {
   align-items: center;
   justify-content: space-between;
 }
-.section4 .container .heading a {
-  color: var(--font-clr);
-}
 .section4 .container {
   width: 100%;
 }
-.section4 .column h3 {
-  color: var(--font-clr);
+.section4 .column a{
   font-size: 14px;
   margin-top: 1rem;
   font-weight: 400;
