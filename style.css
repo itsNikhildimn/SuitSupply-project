@@ -165,6 +165,7 @@ i {
   padding: 0.5rem 1.375rem;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 
 .header-container .icon-container i {
@@ -178,6 +179,11 @@ i {
   color: #c6c6c6;
 }
 
+.header-container .logo-container a {
+display: flex;
+align-items: center;
+justify-content: center;
+}
 .header-container .logo-container a img {
   width: 210px;
 }
@@ -1013,7 +1019,7 @@ input::placeholder {
   }
 
   .header-container .logo-container a img {
-    width: 110px;
+    width: 170px;
   }
 }
 /* <<<<<<<-----MEDIA QUERY FOR HEADER ENDS----->>>>>>> */
