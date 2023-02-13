@@ -116,7 +116,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(177 175 175);
 }
 .text-slider p{
   color:rgb(42, 42, 42);
@@ -329,23 +329,14 @@ body.active {
 .header-nav .country-selector {
   display: flex;
   position: relative;
-  gap: 1rem;
 }
 
 .header-nav .country-selector a {
   font-size: 0.75em;
+  padding: 0rem 1rem;
 }
-
-.header-nav .country-selector .line::after {
-  content: "";
-  position: absolute;
-  left: 20.5%;
-  top: 35%;
-  width: 1px;
-  height: 10px;
-  background-color: #c6c6c6;
-  pointer-events: none;
-  display: block;
+.header-nav .country-selector span:nth-of-type(1) > a{
+border-right: 1px solid grey;
 }
 
 /* right slider nav */
