@@ -10,9 +10,8 @@
   --font-clr: #2e2d2c;
   --bg-clr: #efefef;
   --white-clr: #fff;
-  --p1-font-size: 3.25em;
-  --p2-font-size: 1.875em;
-  --p3-font-size: 1.25em;
+  --h1-font-size: 3em;
+  --h3-font-size: 1.25em;
   --p4-font-size: 0.875em;
   --p5-font-size: 1em;
   --spacer: 1.25rem;
@@ -33,13 +32,13 @@ body {
   ;
 }
 h1 {
-  font-size: 3em;
+  font-size: var(--h1-font-size);
   color: var(--font-clr);
   font-weight: 400;
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: var(--h3-font-size);
   color: var(--font-clr);
   font-weight: 600;
 }
@@ -656,6 +655,15 @@ input::placeholder {
 /* ------------------------------//section4 */
 /* <<<<<<<<<<----------MAIN SECTION CSS ENDS--------->>>>>>>> */
 /* SECTION 7 CSS STARTS */
+
+/* TYPOGRAPHY -----------------*/
+.section7 h3 {
+  font-size: var(--h3-font-size);
+  color: white;
+  font-weight: 600;
+}
+/* TYPOGRAPHY --------------------*/
+
 .section7 {
   background-color: black;
 }
@@ -666,9 +674,6 @@ input::placeholder {
 }
 .section7 .mail .equal {
   flex: 1;
-}
-.section7 h3{
-  color: white;
 }
 .section7 .mail input {
   width: 100%;
@@ -711,6 +716,40 @@ input::placeholder {
 /* //SECTION 7 CSS ENDS */
 
 /* FOOTER CSS STARTS  */
+
+/* Footer Typography---------------- */
+.foot-Links li {
+  list-style: none;
+  color: white;
+  opacity: 0.8;
+}
+.foot-Links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+.accordion .label{
+  position: relative;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+.footer .newsletter a {
+  font-size: var(--p4-font-size);
+  font-weight: 300;
+  color: var(--white-clr);
+  transition: color 0.2s ease-in-out;
+}
+.terms a {
+  font-size: 0.75em;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+/* //Footer Typography------------------- */
+
 .footer {
   background-color: black;
 }
@@ -732,17 +771,6 @@ input::placeholder {
   display: flex;
   gap: 4rem;
 }
-.foot-Links li {
-  list-style: none;
-  color: white;
-  opacity: 0.8;
-}
-.foot-Links a {
-  font-size: var(--p4-font-size);
-  text-decoration: none;
-  color: white;
-  transition: color 0.3s ease-in-out;
-}
 .foot-Links .contact-social {
   display: flex;
 }
@@ -752,15 +780,6 @@ input::placeholder {
 .accordion {
   display: flex;
   justify-content: space-between;
-}
-.accordion .label {
-  position: relative;
-  font-weight: bold;
-  font-size: 1rem;
-  color: white;
-  padding: 1rem 0;
-  cursor: pointer;
-  font-size: var(--p4-font-size);
 }
 .foot-Links {
   display: flex;
@@ -774,12 +793,6 @@ input::placeholder {
   display: flex;
   gap: 1rem;
   padding: 4rem 0rem;
-}
-.footer .newsletter a {
-  font-size: var(--p4-font-size);
-  font-weight: 300;
-  color: var(--white-clr);
-  transition: color 0.2s ease-in-out;
 }
 .footer .newsletter .social-icons {
   display: none;
@@ -799,11 +812,6 @@ input::placeholder {
   color: white;
   font-size: 1.5em;
   font-style: normal;
-}
-.terms a {
-  font-size: 0.75em;
-  color: white;
-  transition: color 0.3s ease-in-out;
 }
 .terms a:hover {
   color: #898989;
@@ -855,7 +863,7 @@ input::placeholder {
 
 .faq-icon > i:nth-of-type(1) {
   color: white;
-  font-size: 1.5rem;
+  font-size:2rem;
   transition: transform 0.16s linear 0s, opacity 0.08s linear 0s;
   transform: rotate(0deg) scale(1);
 }
