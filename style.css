@@ -129,7 +129,7 @@ i {
 
 
 /* <<<<<<<<<<<<----------HEADER CSS STARTS--------->>>>>>>>>> */
-.header-container .column{
+.header-container .col-main{
   flex: 1;
 }
 .header-container .flex-row .column:nth-child(2){
