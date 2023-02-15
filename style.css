@@ -174,10 +174,9 @@ i {
   gap: 1rem;
 }
 
-.header-container .icon-container i {
-  font-size: 1.375rem;
+.header-container .icon-container img {
   cursor: pointer;
-  color: var(--font-clr);
+  width: 10%;
   transition: all 5s ease-in-out;
 }
 
@@ -196,21 +195,22 @@ justify-content: center;
 
 .header-container .icon {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   align-items: center;
 }
 
-.header-container .icon i {
-  font-size: 1.375rem;
+.header-container .icon img {
+  width: 50px;
+  height: 50px;
 }
 
-.header-container .icon a {
-  color: var(--font-clr);
+.header-container .icon img {
   transition: color 0.3s ease-in-out;
+  opacity: 1;
 }
 
 .header-container .icon a:hover {
-  color: #c6c6c6;
+  opacity: 0.7;
 }
 
 .header-nav {
@@ -294,6 +294,10 @@ body.active {
   gap: 2rem;
   position: relative;
 }
+
+
+
+
 
 .header-nav .arrow-slide::after {
   content: "\f054";
@@ -399,6 +403,10 @@ border-right: 1px solid grey;
 }
 
 
+.corpo{
+  top: -590%;
+}
+
 .inner-slider{
   background-color: var(--white-clr);
   position: absolute;
@@ -436,6 +444,9 @@ border-right: 1px solid grey;
 .right-slider a {
   font-size: 1rem;
 }
+
+
+
 
 /* search div */
 .search-bar {
@@ -509,6 +520,7 @@ input::placeholder {
   background: rgba(0, 0, 0, 0.3);
   transition: 0.4s ease-out;
 }
+
 /*  /OVERLAY */
 /* <<<<<<<<<<<<----------HEADER CSS ENDS--------->>>>>>>>>> */
 
