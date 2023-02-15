@@ -151,12 +151,11 @@ main2.addEventListener("click", ()=>{
 //<<<<<<<<<<<----------MAIN SECTION JS FUNCTIONS---------------->>>>>>>>>>>>>
 
 // --------------ExpandView-animation-section3
-const view =document.querySelector(".expandview");
+const details =document.querySelector(".productdetails");
 window.addEventListener("scroll",()=>{
-    if (window.pageYOffset>1200){
-        view.classList.add("active")
-    }
-       
+    if (window.pageYOffset150){
+        details.classList.add("fixed")
+    }   
 });
  // --------------//ExpandView-animation-section3
 
@@ -172,6 +171,14 @@ const accordion = document.getElementsByClassName('contentBx');
 for(i=0; i<accordion.length; i++){
     accordion[i].addEventListener('click',function(){
     this.classList.toggle('active')
+    });
+}
+// ACCORDION FOR FOOTER SECTION
+// ACCORDION FOR FOOTER SECTION
+const accordionProduct = document.getElementsByClassName('contentbox');
+for(i=0; i<accordionProduct.length; i++){
+    accordionProduct[i].addEventListener('click',function(){ 
+    this.classList.toggle('active');
     });
 }
 // ACCORDION FOR FOOTER SECTION
