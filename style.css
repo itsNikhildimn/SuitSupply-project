@@ -1567,14 +1567,15 @@ input::placeholder {
   min-width: 200px;
   color: #5f5f5f;
 }
-.section-product .productdetails{
-  top: 10%;
-  display: flex;
-  left: 70%;
+ .productdetails{
   max-width: 455px;
   margin-right: auto;
   margin-left: auto;
   padding: 13rem 0 0 0;
+}
+.details{
+  position: sticky;
+  top: calc(35vh);margin-bottom: 20rem;
 }
 
 
@@ -1658,10 +1659,7 @@ transition: all 0.2s ease-in;
 .section-product .overlay{
 position: relative;
 }
-.section-product .overlay .mask.active{
- display: none;
- 
-}
+
 .section-product .overlay .mask{
 background-color: rgba(255, 255, 255, 0.7);
 display: flex;
@@ -1673,6 +1671,9 @@ width: 100%;
 top: 0%;
 position:absolute;
 }
+.section-product .overlay .mask.active{
+  display: none;
+ }
 .section-product .overlay .mask h3{
   font-size: 35px;
   text-align: center;
@@ -1704,6 +1705,189 @@ left: 96%;
 height:50px ;
 width:50px ;
 }
+.section-product .about{
+  padding: 0.5rem 2rem;
+}
 /* ----------------//product-Accordion */
 
 /* -----------//Product-page----------- */
+
+
+/* ---------------------cetagories-page */
+.categories-images-main{
+width: 100%;
+}
+.categories-images-main img{
+width: 100%;
+}
+.categories-images-main .about{
+  padding: 0.5rem 1rem;
+}
+.categories-images-main .flex-row {
+  gap: 0.5rem;
+}
+.categories-images-main .flex-row .item{
+  width: 100%;
+}
+.sub-cetagories{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5rem 0;
+}
+.sub-cetagories h1,.luxury,.discoverbtn{
+  color: black;
+}
+ .about-item{
+  font-size: 14px;
+  color:#898989;
+  line-height: 1.5rem;
+}
+.sub-cetagories h1{
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.17rem;
+}
+.sub-cetagories .luxury{
+  text-align: center;
+  font-size: 1.1rem;
+ line-height: 2rem;
+}
+.sub-cetagories .discoverbtn{
+  padding: 1.1rem 3rem;
+  color: #2d2e2c;
+  border: 1px solid #e1e1e1;
+  background-color: #fff;
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-align: center;
+  transition: .2s ease-in-out;
+  margin-top: 1.5rem;
+}
+.sub-cetagories .discoverbtn:hover{
+border-color: #898989;
+}
+.sub-cetagories .main-img{
+  width: 45%;
+  margin-bottom: 2rem;
+}
+.sub-cetagories .main-img img{
+  width: 100%;
+}
+/* ---------------------cetagories-page */
+
+
+
+/* CORPORATE CSS */
+.corporate-container{
+  width: 100%;
+  height: 90vh;
+}
+
+.corporate-container .grid-row{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+}
+
+.corporate-container img{
+  width: 100%;
+}
+
+.corporate-container .column:first-child{
+  background-color: var(--white-clr);
+  width: 100%;
+}
+
+.corporate-container .flex-column{
+ gap: 4rem;
+ display: flex;
+ flex-direction: column;
+ padding: 4rem 5.25rem 0;
+}
+
+.corporate-container .store-locator{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.corporate-container .list-address .flex-row::after{
+  content: "\f054";
+  position: absolute;
+  top: 40%;
+  right: 0;
+  font-family: FontAwesome;
+  font-size: 14px;
+  color: var(--font-clr);
+  opacity: 0.4;
+}
+.corporate-container .list-address{
+  position: relative;
+  cursor: pointer;
+}
+
+.corporate-container .list-address:hover{
+opacity: 0.7;
+transition: all 0.3s ease-in-out;
+}
+
+.corporate-container .list-address::after{
+  content: "";
+  width: 500px;
+  height:1px;
+  border: 1px solid #e1e1e1;
+  position: absolute;
+  top: -10%;
+  left: 0;
+
+}
+
+
+.corporate-container .list-address::before{
+  content: "";
+  width: 500px;
+  height:1px;
+  border: 1px solid #e1e1e1;
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+
+}
+
+.corporate-container h2{
+  font-size: 2rem;
+}
+
+
+.corporate-container .country-select{
+  width: 40%;
+  height: 40px;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  border: 1px solid var(--bg-clr);
+  transition: all 0.3s ease;
+}
+
+.corporate-container .country-select:hover{
+  border: 1px solid black;
+}
+
+.corporate-container .list-address h3{
+  font-size: 1.125rem;
+  line-height: 1.4rem;
+
+}
+
+.corporate-container .list-address p{
+  font-size: 0.938rem;
+  line-height: 1.4rem;
+
+}
+
+/* /CORPORATE CSS */
