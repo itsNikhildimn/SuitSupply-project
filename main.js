@@ -10,7 +10,7 @@ const size = text[0].clientWidth;
 //to set the slide one as the first slide instead of the clone
 textSlide.style.transform = `translateX(-${size * counter}px)`;
 
-//looping the slider every 2s
+//looping the slider every 7s
 setInterval(()=>{
   if(counter >= text.length -1) return;
   

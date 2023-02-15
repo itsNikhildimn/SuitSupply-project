@@ -115,7 +115,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(177 175 175);
+  background-color: rgb(0 0 0);
   overflow: hidden;
 }
 .text-slide{
