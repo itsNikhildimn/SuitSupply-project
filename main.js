@@ -210,13 +210,33 @@ for(i=0; i<accordionProduct.length; i++){
 
 
 
-// FOR POP-UP CHATBOX
-const openChatBox = document.querySelector(".faq-icon")
-const chatBox = document.querySelector(".pop-up");
-openChatBox.addEventListener("click",()=>{
-    chatBox.classList.toggle('active')
-    openChatBox.classList.toggle('active')
+
+
+const toClick = document.querySelector('.left-arrow');
+const mask = document.querySelector('.mask')
+toClick.addEventListener("click", () =>{
+    mask.classList.add('active')
 });
+
+
+const toClickright = document.querySelector('.right-arrow');
+ toClickright.addEventListener('click',()=>{
+        mask.classList.remove('active')
+    })
+ 
+
+
+
+
+
+// FOR POP-UP CHATBOX
+// const openChatBox = document.querySelector(".faq-icon")
+// const chatBox = document.querySelector(".pop-up");
+// openChatBox.addEventListener("click",()=>{
+//     chatBox.classList.toggle('active')
+//     openChatBox.classList.toggle('active')
+// });
 // /FOR POP-UP CHATBOX
 
 //<<<<<<<<<<<----------FOOTER JS FUNCTIONS ENDS---------------->>>>>>>>>>>>>>>>>>
+
