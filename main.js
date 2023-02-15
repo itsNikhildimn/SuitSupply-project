@@ -230,12 +230,12 @@ const toClickright = document.querySelector('.right-arrow');
 
 
 // FOR POP-UP CHATBOX
-// const openChatBox = document.querySelector(".faq-icon")
-// const chatBox = document.querySelector(".pop-up");
-// openChatBox.addEventListener("click",()=>{
-//     chatBox.classList.toggle('active')
-//     openChatBox.classList.toggle('active')
-// });
+const openChatBox = document.querySelector(".faq-icon")
+const chatBox = document.querySelector(".pop-up");
+openChatBox.addEventListener("click",()=>{
+    chatBox.classList.toggle('active')
+    openChatBox.classList.toggle('active')
+});
 // /FOR POP-UP CHATBOX
 
 //<<<<<<<<<<<----------FOOTER JS FUNCTIONS ENDS---------------->>>>>>>>>>>>>>>>>>
