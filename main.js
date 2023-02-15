@@ -115,6 +115,29 @@ arrow.forEach(element => {
 });
 // FOR OPENING SUB-MENU SLIDE //
 
+
+// FOR OPENING SUB-MENU INNER-SLIDE //
+const arrow2 = document.querySelectorAll("#arrow2");
+arrow2.forEach(element => {
+    element.addEventListener("click",function(){
+        arrow2.forEach(arr=>arr.classList.remove("active"))
+        this.classList.add("active")
+    })
+});
+// FOR OPENING SUB-MENU INNER-SLIDE //
+
+// CLICK EVENT ON BACK ARROW TO CLOSE CURRENT SUB-MENU INNER-SLIDE
+const close2 = document.querySelectorAll(".header-search");
+ 
+close2.forEach(element => {
+    element.addEventListener("click",function(){
+        arrow2.forEach(arr=>arr.classList.remove("active"))
+        this.classList.add("active")
+    })
+});
+// CLICK EVENT ON BACK ARROW TO CLOSE CURRENT SUB-MENU INNER-SLIDE
+
+
 // CLICK EVENT ON BACK ARROW TO CLOSE CURRENT SUB-MENU SLIDE
 const close = document.querySelectorAll(".header-nav-search");
  
@@ -125,6 +148,8 @@ close.forEach(element => {
     })
 });
 // CLICK EVENT ON BACK ARROW TO CLOSE CURRENT SUB-MENU SLIDE
+
+
 
 // when click on OVERLAY then remove main slider
 const main = document.querySelector(".header-overlay");
