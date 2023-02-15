@@ -176,7 +176,9 @@ i {
 
 .header-container .icon-container img {
   cursor: pointer;
-  width: 10%;
+  width: 37px;
+  height:37px;
+  opacity: 0.7;
   transition: all 5s ease-in-out;
 }
 
@@ -195,13 +197,13 @@ justify-content: center;
 
 .header-container .icon {
   display: flex;
-  gap: 1rem;
   align-items: center;
+  gap: 1rem;
 }
 
 .header-container .icon img {
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  height:20px;
 }
 
 .header-container .icon img {
@@ -600,8 +602,6 @@ input::placeholder {
 .section3 {
   position: relative;
   margin-bottom: 7rem;
-  background-color: var(--bg-clr);
-  padding: 5rem 0;
 }
 .section3 .container {
   padding: 0;
@@ -881,7 +881,7 @@ input::placeholder {
 
 .faq-icon > i:nth-of-type(1) {
   color: white;
-  font-size:2rem;
+  font-size:1.5rem;
   transition: transform 0.16s linear 0s, opacity 0.08s linear 0s;
   transform: rotate(0deg) scale(1);
 }

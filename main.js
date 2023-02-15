@@ -95,7 +95,7 @@ textSlide.addEventListener('transitionend', () => {
 
 
 // FOR HAMBUGER MENU //
-const menuBar = document.querySelector(".icon-container");
+const menuBar = document.querySelector("#menuBar");
 const slide = document.querySelector(".header-nav");
 const body =document.querySelector("body");
 
