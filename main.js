@@ -178,7 +178,7 @@ main2.addEventListener("click", ()=>{
 // --------------ExpandView-animation-section3
 const details =document.querySelector(".productdetails");
 window.addEventListener("scroll",()=>{
-    if (window.pageYOffset150){
+    if (window.pageYOffset>150){
         details.classList.add("fixed")
     }   
 });
