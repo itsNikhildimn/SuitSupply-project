@@ -191,6 +191,18 @@ window.addEventListener("scroll", () => {
 
 //<<<<<<<<<<<----------FOOTER JS FUNCTIONS---------------->>>>>>>>>>>>>>>>>>
 
+// --------product-image -slider-----------//
+const  toshowimg = document.getElementById("main-image");
+const images = document.querySelectorAll(".sliderimg");
+images.forEach((image) =>{
+    image.addEventListener("click", (event) =>{
+        toshowimg.src = event.target.src;
+     document.querySelector(".sliderimg--active")
+    .classList.remove("sliderimg--active");
+    event.target.classList.add("sliderimg--active")
+    })
+});
+
 // ACCORDION FOR FOOTER SECTION
 const accordion = document.getElementsByClassName('contentBx');
 for (i = 0; i < accordion.length; i++) {
@@ -200,23 +212,10 @@ for (i = 0; i < accordion.length; i++) {
 }
 // ACCORDION FOR FOOTER SECTION
 // ACCORDION FOR FOOTER SECTION
-const accordionProduct = document.getElementsByClassName('contentbox');
-for (i = 0; i < accordionProduct.length; i++) {
-    accordionProduct[i].addEventListener('click', function () {
-        this.classList.toggle('active');
-    });
-}
+
 // ACCORDION FOR FOOTER SECTION
 
-
-
-
-
-
-
-
-
-
+  
 
 
 // FOR POP-UP CHATBOX
