@@ -94,7 +94,7 @@ textSlide.addEventListener('transitionend', () => {
 // //HEADER OFF-SET FUNCTION 
 
 
-// FOR HAMBUGER MENU //
+// FOR TOGGLING HAMBUGER MENU //
 const menuBar = document.querySelector("#menuBar");
 const slide = document.querySelector(".header-nav");
 const body = document.querySelector("body");
@@ -104,6 +104,14 @@ menuBar.addEventListener('click', () => {
     body.classList.add("active");
 });
 // FOR TOGGLING HAMBUGER MENU //
+
+// FOR TOGGLING MOBILE HAMBUGER MENU //
+const mobileMenuIcon = document.querySelector("#mobileMenuIcon");
+mobileMenuIcon.addEventListener('click', () => {
+    slide.classList.add('active');
+    body.classList.add("active");
+});
+// FOR TOGGLING MOBILE HAMBUGER MENU //
 
 // FOR OPENING SUB-MENU SLIDE //
 const arrow = document.querySelectorAll("#arrow");
@@ -209,16 +217,6 @@ for (i = 0; i < accordionProduct.length; i++) {
 // ACCORDION FOR FOOTER SECTION
 
 
-
-
-
-
-
-
-
-
-
-
 // FOR POP-UP CHATBOX
 const openChatBox = document.querySelector(".faq-icon")
 const chatBox = document.querySelector(".pop-up");
@@ -230,3 +228,13 @@ openChatBox.addEventListener("click", () => {
 
 //<<<<<<<<<<<----------FOOTER JS FUNCTIONS ENDS---------------->>>>>>>>>>>>>>>>>>
 
+const toClick = document.querySelector('.left-arrow'); 
+const mask = document.querySelector('.mask')
+toClick.addEventListener("click", () => { 
+mask.classList.add('active') 
+}); 
+
+const toClickright = document.querySelector('.right-arrow'); 
+toClickright.addEventListener('click', () => {
+    mask.classList.remove('active') 
+});
