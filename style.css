@@ -564,18 +564,9 @@ input::placeholder {
   height: 100%;
   width: 100%;
 }
-.section1 .heroimg {
-  width: 100%;
-  height: 100%;
-}
-.section1 .heroimgtab {
-  display: none;
-}
-.section1 .heroimgmobile {
-  display: none;
-}
 .section1 .heroimg img {
   width: 100%;
+  height: 100%;
 }
 .section1 .content {
   position: absolute;
@@ -586,6 +577,19 @@ input::placeholder {
   flex-direction: column;
   text-align: left;
   top: 65%;
+}
+.section1 .heroimg {
+  width: 100%;
+  height: 100%;
+}
+.section1 .heroimgmobile{
+  display: none;
+}
+.section1 .heroimglast{
+  display: none;
+}
+.section1 .heroimgtab{
+  display: none;
 }
 /* ---------------------//section 1 */
 
@@ -1169,6 +1173,19 @@ input::placeholder {
     top: 80%;
     left: 0;
   }
+  .section1 {
+    margin-bottom: 7rem;
+    height: 100%;
+    width: 100%;
+  }
+  .section1 .heroimg {
+    width: 100%;
+    height: 100%;
+  }
+  .section1 .heroimg img {
+    width: 100%;
+    height: 100%;
+  }
   /*-----------------------------section1 */
 
   /* ----------------------------section2 */
@@ -1230,17 +1247,25 @@ input::placeholder {
   body.active {
     padding-right: 0rem;
   }
+  .section1 .content {
+    width: 100%;
+    text-align: center;
+    top: 60%;
+    left: 0;
+  }
   .section1 {
+    margin-bottom: 6rem;
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .section1 .content {
-    width: 100%;
-    text-align: center;
-    top: 70%;
-    left: 0;
+  .section1 .heroimg {
+    width:100%;
+    height: 100%;
   }
+ 
   /* --------------------------------section1 */
 }
 
@@ -1278,19 +1303,45 @@ input::placeholder {
 }
 
 @media screen and (max-width: 800px) {
-  .section1 .content {
-    top: 50%;
+  .section1 .heroimg {
+    width: 100%;
+    height: 100%;
+    display: none;
   }
-
+  .section1 .heroimgmobile{
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .section1 .heroimgmobile img{
+    width: 100%;
+    height: 100%;
+  }
+  .section1 .heroimg img {
+    width: 100%;
+    height: 100%;
+  }
+  .section1 .content {
+    top: 100%;
+  }
 }
 
 @media screen and (max-width: 684px) {
   /* ----------------------section1 */
   .section1 .content {
-    top: 50%;
+    top: 90%;
   }
   .section1 .content h1 {
-    font-size: 32px !important;
+    font-size: 32px;
+  }
+  .section1 .heroimgmobile{
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .section1 .heroimgmobile img{
+    width: 100%;
+    height: 100%;
   }
   /* ----------------------//section1 */
 
@@ -1304,31 +1355,55 @@ input::placeholder {
 
 @media screen and (max-width: 614px) {
   .section1 .content {
-    width: 100vw !important;
-    top: 50%;
+    width: 100vw;
+    top: 90%;
   }
 }
 
 @media screen and (max-width: 600px) {
   /* --------------------------section1 */
+  .section1 {
+    margin-bottom: 5rem;
+    height:100%;
+    width: 100%;
+  }
   .section1 .content {
-    width: 100vw !important;
-    top: 35%;
+    width: 100vw;
+    top: 90%;
+  }
+  .section1 .heroimgmobile{
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .section1 .heroimglast{
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  .section1 .heroimglast img{
+    height: 100%;
+    width: 100%;
   }
   /* --------------------------//section1 */
 }
 
 @media screen and (max-width: 422px) {
   /* -------------------------section1 */
+  .section1 {
+    margin-bottom: 4rem;
+    height:100%;
+    width: 100%;
+  }
   .section1 .content {
-    width: 100vw !important;
-    top: 30%;
+    width: 100vw;
+    top: 70%;
   }
   .section1 .content h1 {
-    font-size: 35px !important;
+    font-size: 35px ;
   }
   .section2 h1{
-    font-size: 1.1rem !important;
+    font-size: 1.1rem ;
   }
   /* -------------------------//section1 */
 
@@ -1373,8 +1448,8 @@ input::placeholder {
 
 @media screen and (min-width: 200px) and (max-width: 335px) {
   .section1 .content {
-    width: 100vw !important;
-    top: 40%;
+    width: 100vw ;
+    top: 90%;
   }
 }
 /* <<<<<<<-----MEDIA QUERY FOR MAIN SECTION ENDS----->>>>>>> */
@@ -1970,7 +2045,12 @@ border-color: #898989;
 }
 /* ---------------------cetagories-page */
 
-
+@media screen and (max-width:769px){
+  .categories-images-main .flex-row {
+    gap: 2.5rem;
+    flex-direction: column;
+  }
+}
 
 /* CORPORATE CSS */
 .corporate-container .grid-row{
