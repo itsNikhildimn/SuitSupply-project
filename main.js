@@ -202,6 +202,17 @@ openChatBox.addEventListener("click", () => {
     chatBox.classList.toggle('active')
     openChatBox.classList.toggle('active')
 });
+
+
+// Close popup from left angle arrow in mobile design
+const closePopup = document.querySelector("#popUp-close");
+
+closePopup.addEventListener("click",()=>{
+chatBox.classList.remove("active")
+openChatBox.classList.remove("active")
+})
+
+// Close popup from left angle arrow in mobile design
 // /FOR POP-UP CHATBOX
  
 //<<<<<<<<<<<----------FOOTER JS FUNCTIONS ENDS---------------->>>>>>>>>>>>>>>>>>

@@ -1508,6 +1508,23 @@ input::placeholder {
 }
 }
 
+/* POP UP WILL BE DISPLAYED AS A FULL WITH CHATBOX */
+@media (max-width: 475px){
+  .pop-up.active {
+    position: static;
+    height: 101vh;
+    width: 103%;
+    border-radius:0px;
+    transform: translateY(-97%);
+  }
+  .pop-up .info {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  
+}
+/* POP UP WILL BE DISPLAYED AS A FULL WITH CHATBOX */
+
 /* <<<<<<<-----MEDIA QUERY FOR FOOTER ENDS----->>>>>>> */
 
 /* ================= /MEDIA QUERIES ENDS============= */
