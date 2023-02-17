@@ -181,19 +181,6 @@ main2.addEventListener("click", () => {
 
 
 
-//<<<<<<<<<<<----------MAIN SECTION JS FUNCTIONS---------------->>>>>>>>>>>>>
-
-// --------------ExpandView-animation-section3
-const details = document.querySelector(".productdetails");
-window.addEventListener("scroll", () => {
-    if (window.pageYOffset > 150) {
-        details.classList.add("fixed")
-    }
-});
-// --------------//ExpandView-animation-section3
-
-//<<<<<<<<<<<----------MAIN SECTION JS FUNCTIONS EDNS---------------->>>>>>>>>>>>>
-
 
 
 
@@ -207,10 +194,6 @@ for (i = 0; i < accordion.length; i++) {
     });
 }
 // ACCORDION FOR FOOTER SECTION
-// ACCORDION FOR FOOTER SECTION
-
-// ACCORDION FOR FOOTER SECTION
-
 
 // FOR POP-UP CHATBOX
 const openChatBox = document.querySelector(".faq-icon")
@@ -223,15 +206,26 @@ openChatBox.addEventListener("click", () => {
  
 //<<<<<<<<<<<----------FOOTER JS FUNCTIONS ENDS---------------->>>>>>>>>>>>>>>>>>
 
-const toClick = document.querySelector('.left-arrow'); 
-const mask = document.querySelector('.mask')
-toClick.addEventListener("click", () => { 
-mask.classList.add('active') 
-}); 
+// SLIDER IMAGES -->
+  let slideIndex = 0;
+  showSlides();
 
-const toClickright = document.querySelector('.right-arrow'); 
-toClickright.addEventListener('click', () => {
-    mask.classList.remove('active') 
-});
+function showSlides() {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";  
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}    
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
 
+// SLIDER IMAGES -->
 

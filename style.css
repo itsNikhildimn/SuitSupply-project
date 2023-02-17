@@ -628,22 +628,7 @@ input::placeholder {
   text-align: center;
 }
 /* ---------------------section 2 */
-
-.section4 .container .column img {
-    width: 357px;
-    height: 438px;
-  }
-  .section4 .container .column {
-    aspect-ratio: 578/694;
-  }
   /* --------------------------//section4 */
-
-@media screen and (min-width: 200px) and (max-width: 335px) {
-  .section1 .content {
-    width: 100vw !important;
-    top: 40%;
-  }
-}
 /* <<<<<<<-----MEDIA QUERY FOR MAIN SECTION ENDS----->>>>>>> */
 
 
@@ -1410,7 +1395,9 @@ input::placeholder {
     flex-direction: column;
     gap: 2rem;
   }
-
+  .section7 h3{
+    font-size: 1.2rem;
+  }
   .section7 .mail .equal {
     width: 100%;
   }
@@ -1434,6 +1421,9 @@ input::placeholder {
   .accordion {
     flex-direction: column;
   }
+  .accordion .label {
+    font-size: 0.8rem;
+}
 
   .accordion .contentBx {
     border-bottom: 1px solid rgb(107, 106, 106);
@@ -1486,6 +1476,9 @@ input::placeholder {
 @media (max-width: 650px) {
   .container {
     padding: 0rem 1rem;
+  }
+  .section7 h3{
+    font-size: 1rem;
   }
 
   .findStore .l-content {
@@ -1963,24 +1956,15 @@ border-color: #898989;
 
 
 /* CORPORATE CSS */
-.corporate-container{
-  width: 100%;
-  height: 90vh;
-}
-
 .corporate-container .grid-row{
   display: grid;
-  grid-template-columns: 50% 50%;
-  justify-content: space-between;
+  grid-template-columns:repeat(2 , 1fr);
+  gap: 2rem;
 }
 
-.corporate-container img{
+.slideshow-container .mySlides img{
   width: 100%;
-}
-
-.corporate-container .column:first-child{
-  background-color: var(--white-clr);
-  width: 100%;
+  height: 100%;
 }
 
 .corporate-container .flex-column{
@@ -1992,7 +1976,7 @@ border-color: #898989;
 
 .corporate-container .store-locator{
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -2022,7 +2006,7 @@ transition: all 0.3s ease-in-out;
   content: "";
   width: 100%;
   height:1px;
-  border: 1px solid #e1e1e1;
+  border: 1px solid #e7e7e7;
   position: absolute;
   top: -10%;
   left: 0;
@@ -2032,28 +2016,32 @@ transition: all 0.3s ease-in-out;
 
 .corporate-container .list-address::before{
   content: "";
-  width: 500px;
+  width: 100%;
   height:1px;
-  border: 1px solid #e1e1e1;
+  border: 1px solid #e7e7e7;
   position: absolute;
   bottom: -10%;
   left: 0;
 
 }
 
-.corporate-container h2{
-  font-size: 2rem;
+.corporate-container h1{
+  font-size: 2.5rem;
+  color: black;
 }
 
 
 .corporate-container .country-select{
-  width: 40%;
-  height: 40px;
+  outline: none;
+  width: 16rem;
+  height: 3.1rem;
   border-radius: 0.2rem;
   padding: 0.5rem;
   border: 1px solid var(--bg-clr);
   transition: all 0.3s ease;
+  display: block;
 }
+
 
 .corporate-container .country-select:hover{
   border: 1px solid black;
@@ -2070,8 +2058,72 @@ transition: all 0.3s ease-in-out;
   line-height: 1.4rem;
 
 }
+/* MEDIA QUERY */
+@media (max-width:823px){
+  .corporate-container .grid-row {
+    grid-template-columns: repeat(1 , 1fr);
+}
+.corporate-container .flex-column {
+  gap: 4rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.25rem 0;
+}
+}
 
+/* MEDIA QUERY */
 /* /CORPORATE CSS */
+
+/*SLIDER IMAGES  */
+.mySlides {
+display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dots{
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  text-align:center;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.dot {
+  height: 7px;
+  width: 7px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+/*SLIDER IMAGES  */
 
 /* <!-- FREQUENTLY BOUGHT TOGETHER css starts */
 .frequent-product .container{
