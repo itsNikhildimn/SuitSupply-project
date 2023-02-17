@@ -208,12 +208,7 @@ for (i = 0; i < accordion.length; i++) {
 }
 // ACCORDION FOR FOOTER SECTION
 // ACCORDION FOR FOOTER SECTION
-const accordionProduct = document.getElementsByClassName('contentbox');
-for (i = 0; i < accordionProduct.length; i++) {
-    accordionProduct[i].addEventListener('click', function () {
-        this.classList.toggle('active');
-    });
-}
+
 // ACCORDION FOR FOOTER SECTION
 
 
@@ -225,7 +220,7 @@ openChatBox.addEventListener("click", () => {
     openChatBox.classList.toggle('active')
 });
 // /FOR POP-UP CHATBOX
-
+ 
 //<<<<<<<<<<<----------FOOTER JS FUNCTIONS ENDS---------------->>>>>>>>>>>>>>>>>>
 
 const toClick = document.querySelector('.left-arrow'); 
@@ -238,3 +233,5 @@ const toClickright = document.querySelector('.right-arrow');
 toClickright.addEventListener('click', () => {
     mask.classList.remove('active') 
 });
+
+
