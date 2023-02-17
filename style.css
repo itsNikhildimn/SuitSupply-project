@@ -1308,7 +1308,12 @@ input::placeholder {
     width:100%;
     height: 100%;
   }
- 
+  .section3  .main-img img{
+display: none;
+  }
+.section3 .container .suit img {
+  max-width: 100%;
+}
   /* --------------------------------section1 */
 }
 
@@ -1365,7 +1370,7 @@ input::placeholder {
     height: 100%;
   }
   .section1 .content {
-    top: 100%;
+    top: 85%;
   }
 }
 
@@ -1399,7 +1404,7 @@ input::placeholder {
 @media screen and (max-width: 614px) {
   .section1 .content {
     width: 100vw;
-    top: 90%;
+    top: 80%;
   }
 }
 
