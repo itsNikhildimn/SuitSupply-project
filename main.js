@@ -228,12 +228,12 @@ openChatBox.addEventListener("click", () => {
 
 
 // Close popup from left angle arrow in mobile design
-// const closePopup = document.querySelector("#popUp-close");
+const closePopup = document.querySelector("#popUp-close");
 
-// closePopup.addEventListener("click",()=>{
-// chatBox.classList.remove("active")
-// openChatBox.classList.remove("active")
-// })
+closePopup.addEventListener("click",()=>{
+chatBox.classList.remove("active")
+openChatBox.classList.remove("active")
+})
 
 // Close popup from left angle arrow in mobile design
 // /FOR POP-UP CHATBOX
