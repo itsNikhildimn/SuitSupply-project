@@ -212,6 +212,11 @@ header {
   gap: 0.3rem;
   align-items: center;
   cursor: pointer;
+  opacity: 0.7;
+  transition: .3s ease;
+}
+.hamburger-icon:hover {
+  opacity: 0.3;
 }
 .hamburger-icon .lines {
   height: 2px;
@@ -255,6 +260,7 @@ header {
 .header-container .icon img {
   transition: color 0.3s ease-in-out;
   opacity: 1;
+  filter: contrast(6.5);
 }
 
 .header-container .icon a:hover {
@@ -284,7 +290,7 @@ header {
 
 body.active {
   overflow-y: hidden;
-  /* padding-right: 1rem; */
+  padding-right: 1rem;
 }
 
 .header-nav.active main {
@@ -951,6 +957,7 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-top: 1rem;
 }
 
 /* ACCORDION ENDS */
@@ -1270,12 +1277,15 @@ input::placeholder {
   .header-container .logo-container a img {
     width: 140px;
   }
+  .header-container .icon img {
+    height: 20px;
+    width: 17px;
+}
 }
 /* <<<<<<<-----MEDIA QUERY FOR HEADER ENDS----->>>>>>> */
 
 /* <<<<<<<-----MEDIA QUERY FOR MAIN STARTS----->>>>>>> */
 
-/* media queriy for main section */
 /* media queriy for main section */
 @media screen and (max-width: 1200px) {
 
