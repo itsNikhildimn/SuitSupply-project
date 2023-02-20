@@ -1213,7 +1213,7 @@ input::placeholder {
     width: 100%;
     text-align: center;
     padding-left: 0;
-    top: 80%;
+    top: 70%;
     left: 0;
   }
   .section1 {
@@ -1325,7 +1325,7 @@ display: none;
     width: 100%;
   }
   .section1 .content {
-    top: 60%;
+    top: 50%;
   }
   /* -------------------------//section1 */
 
@@ -1377,7 +1377,7 @@ display: none;
 @media screen and (max-width: 684px) {
   /* ----------------------section1 */
   .section1 .content {
-    top: 90%;
+    top: 80%;
   }
   .section1 .content h1 {
     font-size: 32px;
@@ -1417,7 +1417,7 @@ display: none;
   }
   .section1 .content {
     width: 100vw;
-    top: 90%;
+    top: 80%;
   }
   .section1 .heroimgmobile{
     width: 100%;
@@ -1445,7 +1445,7 @@ display: none;
   }
   .section1 .content {
     width: 100vw;
-    top: 70%;
+    top: 60%;
   }
   .section1 .content h1 {
     font-size: 35px ;
@@ -1497,7 +1497,7 @@ display: none;
 @media screen and (min-width: 200px) and (max-width: 335px) {
   .section1 .content {
     width: 100vw ;
-    top: 90%;
+    top: 80%;
   }
 }
 /* <<<<<<<-----MEDIA QUERY FOR MAIN SECTION ENDS----->>>>>>> */

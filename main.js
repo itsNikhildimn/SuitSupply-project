@@ -106,13 +106,13 @@ menuBar.addEventListener('click', () => {
 // FOR TOGGLING HAMBUGER MENU //
 
 // FOR TOGGLING add to cart MENU //
-// const cartIcon = document.querySelector("#CartIcon");
-// const addToCart = document.querySelector(".AddtoCart");
+const cartIcon = document.querySelector("#CartIcon");
+const addToCart = document.querySelector(".AddtoCart");
 
-// cartIcon.addEventListener('click', () => {
-//     addToCart.classList.add('active');
-//     body.classList.add("active");
-// });
+cartIcon.addEventListener('click', () => {
+    addToCart.classList.add('active');
+    body.classList.add("active");
+});
 
 
 // FOR TOGGLING add to cart MENU //
@@ -183,12 +183,12 @@ main.addEventListener('click', () => {
 // when click on OVERLAY then remove main slider
 
 // when click on overlay add to cart section removes from active
-// const overlay2 = document.querySelector(".header-overlay2");
+const overlay2 = document.querySelector(".header-overlay2");
 
-// overlay2.addEventListener('click', () => {
-//     addToCart.classList.remove('active');
-//     body.classList.remove("active");
-// });
+overlay2.addEventListener('click', () => {
+    addToCart.classList.remove('active');
+    body.classList.remove("active");
+});
 // when click on overlay add to cart section removes from active
 
 // REMOVE SUB MENU SLIDE WHEN CLICK ON HEADER OVERLAY //

@@ -23,6 +23,10 @@
 }
 
 /*Css for filter */
+.filter-bar{
+    position: sticky;
+    top: 56px;
+}
 .filters{
     display: flex;
     align-items: center;
@@ -44,4 +48,41 @@
 .filters button:hover{
     border-color: #898989;
 }
+/* filter slider */
+.AddtoCart{
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--white-clr);
+    transform: translateX(120%);
+    transition: transform 0.4s cubic-bezier(0.2, 0.4, 0.2, 1);
+    z-index: 1000;
+    width: 28.375rem;
+    padding: 0 2.125rem;
+    min-height: 100vh;
+    border-right: 1px solid var(--bg-clr);
+  }
+  .AddtoCart.active {
+    transform: translateX(0);
+  }
+  .AddtoCart.active + .header-overlay2{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    transition: 0.4s ease-out;
+  }
+  .AddtoCart.active main {
+    overflow: hidden;
+  }
+/* filter slider */
 /*//Css for filter */
