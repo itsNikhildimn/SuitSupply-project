@@ -105,6 +105,20 @@ menuBar.addEventListener('click', () => {
 });
 // FOR TOGGLING HAMBUGER MENU //
 
+// FOR TOGGLING add to cart MENU //
+const cartIcon = document.querySelector("#CartIcon");
+const addToCart = document.querySelector(".AddtoCart");
+
+cartIcon.addEventListener('click', () => {
+    addToCart.classList.add('active');
+    body.classList.add("active");
+});
+
+
+// FOR TOGGLING add to cart MENU //
+
+
+
 // FOR TOGGLING MOBILE HAMBUGER MENU //
 const mobileMenuIcon = document.querySelector("#mobileMenuIcon");
 mobileMenuIcon.addEventListener('click', () => {
@@ -167,6 +181,15 @@ main.addEventListener('click', () => {
     body.classList.remove("active");
 });
 // when click on OVERLAY then remove main slider
+
+// when click on overlay add to cart section removes from active
+const overlay2 = document.querySelector(".header-overlay2");
+
+overlay2.addEventListener('click', () => {
+    addToCart.classList.remove('active');
+    body.classList.remove("active");
+});
+// when click on overlay add to cart section removes from active
 
 // REMOVE SUB MENU SLIDE WHEN CLICK ON HEADER OVERLAY //
 const main2 = document.querySelector(".header-overlay");
@@ -240,3 +263,20 @@ setTimeout(showSlides, 5000); // Change image every 2 seconds
 
 // SLIDER IMAGES -->
 
+// new in page text read more funtionality //
+function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
+// new in page text read more funtionality //
