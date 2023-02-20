@@ -32,24 +32,10 @@ body {
     url(/Founders_Grotesk/FoundersGroteskXCond-Bold.otf);
 }
 
-h1 {
-  font-size: var(--h1-font-size);
-  color: var(--font-clr);
-  font-weight: 400;
-  color: var(--white-clr);
-  margin-bottom: 0.275rem;
-}
-
 h3 {
   font-size: var(--h3-font-size);
   color: var(--font-clr);
   font-weight: 600;
-}
-
-span {
-  color: var(--white-clr);
-  font-size: 1em;
-  font-weight: 400;
 }
 
 a {
@@ -646,7 +632,15 @@ input::placeholder {
   text-align: left;
   top: 65%;
 }
-
+.section1 .content h1{
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  
+}
+.section1 .content .white{
+  color: #fff ;
+}
 .section1 .heroimg {
   width: 100%;
   height: 100%;
@@ -722,7 +716,21 @@ input::placeholder {
   position: relative;
   margin-bottom: 7rem;
 }
-
+.section3 .section1 .content{
+  padding: 0 0 0 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+}
+.section3 .section1 .content h4{
+  font-size:52px;
+  font-weight: 900;
+  color: #fff;
+}
 .section3 .container {
   padding: 0;
   width: 100%;
@@ -1973,7 +1981,7 @@ input::placeholder {
     z-index: 1000;
     position: fixed;
     top: calc(-50vh);
-    top: 81%;
+    top: 80%;
     width: 100%;
     height: 100%;
     background-color: #fff;
@@ -2683,3 +2691,61 @@ input::placeholder {
 }
 /* footer log in page */
 /* LOG IN PAGE CSS ENDS */
+
+
+/* ------------------------BOOKMARK - PAGE */
+
+.bookmark{
+  height: 78vh;
+  width: 100%;
+}
+.bookmark h1{
+  color: var(--font-clr);
+  font-size: 31px;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+.bookmark p{
+  max-width: 350px;
+  font-size: 17px;
+  line-height: 22px;
+  margin-bottom: 0.5rem;
+  color: #2d2e2c;
+}
+.bookmark .login{
+  height:46px;
+  width: 218px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background-color: var(--font-clr);
+color: #fff;
+border-radius: 5px;
+}
+.bookmark .newarrival{
+  height:46px;
+  width: 218px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+}
+.bookmark .container{
+  height: 100%;
+  width: 100%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bookmark .container .bookmark-content{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  max-width: 570px;
+  margin-inline: auto;
+}
+/* ------------------------//BOOKMARK - PAGE */
