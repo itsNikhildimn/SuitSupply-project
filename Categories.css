@@ -84,5 +84,40 @@
   .AddtoCart.active main {
     overflow: hidden;
   }
+
+ .content #more{
+    display: none;
+  }
+
+  .about-category .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-category #myBtn{
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+
+  }
+
+  .about-category #myBtn:hover{
+    opacity: .5;
+  }
+
+  .about-category .content p{
+    line-height: 24px;
+    font-size: 1rem;
+    text-align: center;
+ 
+ 
+  }
+
+
+  .about-category .content span{
+    color: black;
+  }
 /* filter slider */
 /*//Css for filter */
