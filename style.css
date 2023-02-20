@@ -23,6 +23,7 @@ body {
   font-family: myfont;
   letter-spacing: 0.12rem;
 }
+
 @font-face {
   font-family: myfont;
   src: url(/Founders_Grotesk/FoundersGroteskCond-Lt.otf),
@@ -30,6 +31,7 @@ body {
     url(/Founders_Grotesk/FoundersGrotesk-Medium.otf),
     url(/Founders_Grotesk/FoundersGroteskXCond-Bold.otf);
 }
+
 h1 {
   font-size: var(--h1-font-size);
   color: var(--font-clr);
@@ -37,55 +39,68 @@ h1 {
   color: var(--white-clr);
   margin-bottom: 0.275rem;
 }
+
 h3 {
   font-size: var(--h3-font-size);
   color: var(--font-clr);
   font-weight: 600;
 }
+
 span {
   color: var(--white-clr);
   font-size: 1em;
   font-weight: 400;
 }
+
 a {
   text-decoration: none;
   cursor: pointer;
 }
+
 button {
   cursor: pointer;
 }
+
 .btn {
   font-size: 1em;
   font-weight: 500;
 }
+
 .container {
   min-height: inherit;
   padding: 0rem 4.6875rem;
   width: 100%;
 }
+
 .flex-row {
   display: flex;
 }
+
 .grid-row {
   display: grid;
 }
+
 li {
   list-style: none;
 }
+
 main .heading h3,
 a {
   color: var(--font-clr);
 }
+
 section hr {
   border: none;
   background: rgb(107, 106, 106);
   height: 1px;
   opacity: 0.7;
 }
+
 i {
   font-family: FontAwesome;
   font-style: normal;
 }
+
 .btn button {
   font-size: 1em;
   font-weight: 600;
@@ -93,14 +108,17 @@ i {
   border: none;
   background-color: transparent;
 }
+
 .container {
   min-height: inherit;
   padding: 0rem 4.6875rem;
   width: 100%;
 }
+
 .flex-row {
   display: flex;
 }
+
 .grid-row {
   display: grid;
 }
@@ -126,6 +144,7 @@ i {
   font-size: 1rem;
   text-align: center;
 }
+
 /* -----------------//text-slider------------- */
 
 /* <<<<<<<<<<<<----------HEADER CSS STARTS--------->>>>>>>>>> */
@@ -145,6 +164,7 @@ header {
   align-items: center;
   justify-content: end;
 }
+
 .header-container {
   position: sticky;
   top: 0;
@@ -161,6 +181,7 @@ header {
   width: 50px;
   color: #202020;
 }
+
 .header-container.hide {
   transform: translateY(-100%);
 }
@@ -215,6 +236,7 @@ header {
   align-items: center;
   justify-content: center;
 }
+
 .header-container .logo-container a img {
   width: 210px;
 }
@@ -259,9 +281,10 @@ header {
 .header-nav.active {
   transform: translateX(0);
 }
+
 body.active {
   overflow-y: hidden;
-  padding-right: 1rem;
+  /* padding-right: 1rem; */
 }
 
 .header-nav.active main {
@@ -398,7 +421,7 @@ body.active {
   font-size: 0.75em;
 }
 
-.header-nav .right-slider > a {
+.header-nav .right-slider>a {
   font-size: 1rem;
 }
 
@@ -453,11 +476,11 @@ body.active {
   transform: translate(0%);
 }
 
-.header-nav-search.active + .right-slider {
+.header-nav-search.active+.right-slider {
   transform: translateX(120%);
 }
 
-.header-search.active + .inner-slider {
+.header-search.active+.inner-slider {
   transform: translate(120%);
 }
 
@@ -481,7 +504,7 @@ body.active {
   transition: all 0.2s ease-in;
 }
 
-#arrow.active + .search-bar {
+#arrow.active+.search-bar {
   opacity: 1;
   visibility: visible;
   transform: translate(0%);
@@ -528,7 +551,7 @@ input::placeholder {
 /* search div */
 
 /*  OVERLAY */
-.header-nav.active + .header-overlay {
+.header-nav.active+.header-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -607,10 +630,12 @@ input::placeholder {
   height: 100%;
   width: 100%;
 }
+
 .section1 .heroimg img {
   width: 100%;
   height: 100%;
 }
+
 .section1 .content {
   position: absolute;
   width: 100%;
@@ -621,6 +646,7 @@ input::placeholder {
   text-align: left;
   top: 65%;
 }
+
 .section1 .heroimg {
   width: 100%;
   height: 100%;
@@ -634,6 +660,7 @@ input::placeholder {
 .section1 .heroimgtab {
   display: none;
 }
+
 /* ---------------------//section 1 */
 
 /* ---------------------section 2 */
@@ -641,29 +668,36 @@ input::placeholder {
   margin-bottom: 7rem;
   padding: 0.7rem;
 }
+
 .section2 .contain {
   padding: 0 0 0 0rem;
 }
+
 .section2 .contain .heading {
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .section2 .contain .about {
   padding-top: 12px;
 }
+
 .section2 .contain .about a:nth-of-type(1) {
   color: var(--font-clr);
   transition: opacity 0.3s ease;
   font-size: 1.2rem;
 }
+
 .section2 .contain .about a:nth-of-type(2) {
   font-size: 1rem;
 }
+
 .section2 .contain .about a:nth-of-type(1):hover {
   opacity: 0.6;
 }
+
 .section2 .contain .about .price {
   margin-top: 0.3rem;
   color: gray;
@@ -672,7 +706,9 @@ input::placeholder {
 .section2 .about {
   text-align: center;
 }
+
 /* ---------------------section 2 */
+/* --------------------------//section4 */
 /* --------------------------//section4 */
 /* <<<<<<<-----MEDIA QUERY FOR MAIN SECTION ENDS----->>>>>>> */
 
@@ -681,25 +717,31 @@ input::placeholder {
 .white {
   color: var(--white-clr);
 }
+
 .section3 {
   position: relative;
   margin-bottom: 7rem;
 }
+
 .section3 .container {
   padding: 0;
   width: 100%;
 }
+
 .section3 .container .suit {
   margin: auto;
 }
+
 .section3 .container .suit img {
   max-width: 100%;
 }
+
 .section3 .container .content {
   position: absolute;
   left: 5%;
   top: 55%;
 }
+
 /* ------------------------//SECTION-SUIT */
 /* section3 */
 
@@ -714,6 +756,7 @@ input::placeholder {
   align-items: center;
   justify-content: space-between;
 }
+
 .section4 .container {
   width: 100%;
 }
@@ -723,15 +766,18 @@ input::placeholder {
   font-weight: 400;
   color: var(--font-clr);
 }
+
 .section4 .column p {
   font-size: 20px;
   max-width: 372px;
   margin-top: 0.5rem;
   font-weight: 600;
 }
+
 .section4 .container .flex-row {
   gap: 0.7rem;
 }
+
 .section4 .container .column {
   aspect-ratio: 578/694;
   cursor: pointer;
@@ -743,9 +789,11 @@ input::placeholder {
 .section4 .column:hover .blog-content {
   opacity: 0.6;
 }
+
 .section4 .container .column img {
   width: 100%;
 }
+
 .owl-carousel .owl-theme .scroll {
   overflow-x: scroll;
 }
@@ -760,19 +808,23 @@ input::placeholder {
   color: white;
   font-weight: 600;
 }
+
 /* TYPOGRAPHY --------------------*/
 
 .section7 {
   background-color: black;
 }
+
 .section7 .mail {
   justify-content: space-between;
   align-items: center;
   padding: 3rem 0rem;
 }
+
 .section7 .mail .equal {
   flex: 1;
 }
+
 .section7 .mail input {
   width: 100%;
   padding: 1.5rem;
@@ -785,13 +837,16 @@ input::placeholder {
   border: 1px solid #202020;
   color: var(--white-clr);
 }
+
 .section7 .mail input:hover {
   background-color: #252525;
   border: 1px solid #252525;
 }
+
 .section7 .r-content {
   position: relative;
 }
+
 .section7 .r-content button {
   margin: 0;
   position: absolute;
@@ -808,9 +863,11 @@ input::placeholder {
   font-weight: 600;
   transition: 0.3s ease-in-out;
 }
+
 .section7 .r-content button:hover {
   color: #898989;
 }
+
 /* //SECTION 7 CSS ENDS */
 
 /* FOOTER CSS STARTS  */
@@ -821,6 +878,7 @@ input::placeholder {
   color: white;
   opacity: 0.8;
 }
+
 .foot-Links a {
   text-decoration: none;
   color: white;
@@ -835,27 +893,32 @@ input::placeholder {
   padding: 1rem 0;
   cursor: pointer;
 }
+
 .footer .newsletter a {
   font-size: var(--p4-font-size);
   font-weight: 300;
   color: var(--white-clr);
   transition: color 0.2s ease-in-out;
 }
+
 .terms a {
   font-size: 0.75em;
   color: white;
   transition: color 0.3s ease-in-out;
 }
+
 /* //Footer Typography------------------- */
 
 .footer {
   background-color: black;
 }
+
 .footer hr {
   border: none;
   background: grey;
   height: 1px;
 }
+
 .foot-nav {
   padding: 5rem 0rem;
 }
@@ -865,25 +928,31 @@ input::placeholder {
   display: flex;
   gap: 2rem;
 }
+
 .foot-Links .email {
   display: flex;
   gap: 4rem;
 }
+
 .foot-Links .contact-social {
   display: flex;
 }
+
 .foot-Links a:hover {
   color: #898989;
 }
+
 .accordion {
   display: flex;
   justify-content: space-between;
 }
+
 .foot-Links {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
+
 /* ACCORDION ENDS */
 
 /* newsletter css starts */
@@ -892,18 +961,22 @@ input::placeholder {
   gap: 1rem;
   padding: 4rem 0rem;
 }
+
 .footer .newsletter .social-icons {
   display: none;
 }
+
 .footer .newsletter a:hover {
   color: #898989;
 }
+
 /* newsletter css ends */
 
 /* terms and condition css starts */
 .footer .terms {
   padding: 2rem 0;
 }
+
 .terms i {
   font-family: FontAwesome;
   display: inline-block;
@@ -911,34 +984,42 @@ input::placeholder {
   font-size: 1.5em;
   font-style: normal;
 }
+
 .terms a:hover {
   color: #898989;
 }
+
 .terms {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .terms .country {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-.terms .country > span:nth-of-type(1) {
+
+.terms .country>span:nth-of-type(1) {
   border-right: 1px solid white;
   padding-right: 0.5rem;
 }
+
 .terms .social-icons {
   display: flex;
   gap: 2rem;
 }
+
 .terms .social-icons i {
   color: white;
   transition: color 0.3s ease-in-out;
 }
+
 .terms .social-icons i:hover {
   color: grey;
 }
+
 /* terms and condition css ends */
 
 /* FOOTER CSS ENDS  */
@@ -955,11 +1036,12 @@ input::placeholder {
   cursor: pointer;
   transition: transform 250ms cubic-bezier(0.33, 0, 0, 1) 0s;
 }
+
 .faq-icon:hover {
   transform: scale(1.1);
 }
 
-.faq-icon > i:nth-of-type(1) {
+.faq-icon>i:nth-of-type(1) {
   color: white;
   font-size: 1.5rem;
   transition: transform 0.16s linear 0s, opacity 0.08s linear 0s;
@@ -970,7 +1052,8 @@ input::placeholder {
   visibility: hidden;
   transform: rotate(-60deg) scale(0);
 }
-.faq-icon > i:nth-of-type(2) {
+
+.faq-icon>i:nth-of-type(2) {
   color: white;
   font-size: 1.5rem;
   font-family: FontAwesome;
@@ -980,7 +1063,8 @@ input::placeholder {
   transform: rotate(60deg);
   transition: transform 0.16s linear 0s, opacity 0.08s linear 0s;
 }
-.faq-icon.active > i:nth-of-type(2) {
+
+.faq-icon.active>i:nth-of-type(2) {
   color: white;
   font-size: 1.5rem;
   opacity: 1;
@@ -1013,6 +1097,7 @@ input::placeholder {
     opacity 83ms ease-out 0s;
   transform: scale(0);
 }
+
 /* active chatbox interface */
 .pop-up.active {
   opacity: 1;
@@ -1020,6 +1105,7 @@ input::placeholder {
   visibility: visible;
   transform: scale(1);
 }
+
 /* active chatbox interface */
 
 .pop-up .info {
@@ -1031,6 +1117,7 @@ input::placeholder {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+
 .pop-up .t-images {
   display: flex;
 }
@@ -1086,6 +1173,7 @@ input::placeholder {
   font-family: FontAwesome;
   padding-right: 0.5rem;
 }
+
 /* CHATBOX CSS STARTS */
 .chatBox {
   padding: 1.5rem;
@@ -1145,6 +1233,7 @@ input::placeholder {
   color: black;
   font-size: 1rem;
 }
+
 /* CHATBOX CSS ENDS*/
 /* STYLING FOR FAQ FLOATING ICON ENDS */
 
@@ -1169,6 +1258,7 @@ input::placeholder {
   .icon-container {
     display: none;
   }
+
   .header-container .flex-row {
     padding: 0.8rem 1.375rem 0rem;
   }
@@ -1188,6 +1278,7 @@ input::placeholder {
 /* media queriy for main section */
 /* media queriy for main section */
 @media screen and (max-width: 1200px) {
+
   /* ---------------------------section1 */
   .section1 .content {
     width: 100%;
@@ -1196,19 +1287,23 @@ input::placeholder {
     top: 70%;
     left: 0;
   }
+
   .section1 {
     margin-bottom: 7rem;
     height: 100%;
     width: 100%;
   }
+
   .section1 .heroimg {
     width: 100%;
     height: 100%;
   }
+
   .section1 .heroimg img {
     width: 100%;
     height: 100%;
   }
+
   /*-----------------------------section1 */
 
   /* ----------------------------section2 */
@@ -1226,15 +1321,18 @@ input::placeholder {
     align-items: center;
     justify-content: space-between;
   }
+
   /* -------------------------------section2 */
 
   .section-suit {
     margin-bottom: 5rem;
   }
+
   /* -------------------------------section4 */
   .owl-carousel .owl-nav button span {
     display: none;
   }
+
   /* ----------------------------section4 */
 
   /* -----------------------------section5 */
@@ -1245,37 +1343,45 @@ input::placeholder {
     align-items: center;
     justify-content: space-between;
   }
+
   .section4 .container {
     padding: 0rem;
   }
+
   .section4 .container .flex-row {
     padding: 0 1rem;
   }
+
   .section4 .container .column img {
     height: 43.375rem;
     width: 33.625rem;
   }
+
   .section4,
   .section1,
   .section2,
   .section3 {
     margin-bottom: 5rem;
   }
+
   .section4 .container .flex-row {
     overflow-x: scroll;
     padding-bottom: 1rem;
   }
 }
+
 @media screen and (max-width: 1024px) {
   body.active {
     padding-right: 0rem;
   }
+
   .section1 .content {
     width: 100%;
     text-align: center;
     top: 60%;
     left: 0;
   }
+
   .section1 {
     margin-bottom: 6rem;
     height: 100%;
@@ -1284,6 +1390,7 @@ input::placeholder {
     align-items: center;
     justify-content: center;
   }
+
   .section1 .heroimg {
     width: 100%;
     height: 100%;
@@ -1298,15 +1405,18 @@ input::placeholder {
 }
 
 @media screen and (max-width: 850px) {
+
   /* ------------------------section1 */
   .section1 {
     margin-bottom: 3rem;
     height: 100%;
     width: 100%;
   }
+
   .section1 .content {
     top: 50%;
   }
+
   /* -------------------------//section1 */
 
   /* ------------------------section3-suit */
@@ -1320,10 +1430,12 @@ input::placeholder {
     left: 0%;
     top: 50%;
   }
+
   .section3 .container .content h2 {
     font-size: 1.8rem;
     font-weight: 500;
   }
+
   /* --------------------------section3-suit */
 }
 
@@ -1342,20 +1454,24 @@ input::placeholder {
     width: 100%;
     height: 100%;
   }
+
   .section1 .heroimg img {
     width: 100%;
     height: 100%;
   }
+
   .section1 .content {
     top: 85%;
   }
 }
 
 @media screen and (max-width: 684px) {
+
   /* ----------------------section1 */
   .section1 .content {
     top: 80%;
   }
+
   .section1 .content h1 {
     font-size: 32px;
   }
@@ -1368,12 +1484,14 @@ input::placeholder {
     width: 100%;
     height: 100%;
   }
+
   /* ----------------------//section1 */
 
   /* ----------------------section4 */
   .section4 .container {
     padding: 0rem;
   }
+
   /* ----------------------//section4 */
 }
 
@@ -1385,12 +1503,14 @@ input::placeholder {
 }
 
 @media screen and (max-width: 600px) {
+
   /* --------------------------section1 */
   .section1 {
     margin-bottom: 5rem;
     height: 100%;
     width: 100%;
   }
+
   .section1 .content {
     width: 100vw;
     top: 80%;
@@ -1409,26 +1529,31 @@ input::placeholder {
     height: 100%;
     width: 100%;
   }
+
   /* --------------------------//section1 */
 }
 
 @media screen and (max-width: 422px) {
+
   /* -------------------------section1 */
   .section1 {
     margin-bottom: 4rem;
     height: 100%;
     width: 100%;
   }
+
   .section1 .content {
     width: 100vw;
     top: 60%;
   }
+
   .section1 .content h1 {
     font-size: 35px;
   }
   .section2 h1 {
     font-size: 1.1rem;
   }
+
   /* -------------------------//section1 */
 
   /* -------------------------section2 */
@@ -1438,9 +1563,11 @@ input::placeholder {
     align-items: center;
     justify-content: space-between;
   }
+
   .section2 .contain {
     padding: 0rem;
   }
+
   /* -------------------------//section2 */
 
   /* -------------------------section3 */
@@ -1448,9 +1575,11 @@ input::placeholder {
     height: 100%;
     transform: translate(-80px, 25%);
   }
+
   .section3 .images img {
     height: 50%;
   }
+
   /* -------------------------//section3 */
 
   /* --------------------------section4 */
@@ -1462,9 +1591,11 @@ input::placeholder {
     width: 357px;
     height: 438px;
   }
+
   .section4 .container .column {
     aspect-ratio: 578/694;
   }
+
   /* --------------------------//section4 */
 }
 
@@ -1474,6 +1605,7 @@ input::placeholder {
     top: 80%;
   }
 }
+
 /* <<<<<<<-----MEDIA QUERY FOR MAIN SECTION ENDS----->>>>>>> */
 /* <<<<<<<-----MEDIA QUERY FOR MAIN SECTION ENDS----->>>>>>> */
 
@@ -1488,6 +1620,7 @@ input::placeholder {
   .container {
     padding: 0rem 4rem;
   }
+
   .section7 .mail {
     flex-direction: column;
     gap: 2rem;
@@ -1495,6 +1628,7 @@ input::placeholder {
   .section7 h3 {
     font-size: 1.2rem;
   }
+
   .section7 .mail .equal {
     width: 100%;
   }
@@ -1518,6 +1652,7 @@ input::placeholder {
   .accordion {
     flex-direction: column;
   }
+
   .accordion .label {
     font-size: 0.8rem;
   }
@@ -1557,6 +1692,7 @@ input::placeholder {
     max-height: 400px;
     padding: 1rem 0rem;
   }
+
   /* active class to accordion */
 
   .footer .sustainibility {
@@ -1600,6 +1736,7 @@ input::placeholder {
   .terms .social-icons {
     display: none;
   }
+
   .accordion .label {
     padding: 0.6rem 0;
   }
@@ -1614,11 +1751,13 @@ input::placeholder {
     border-radius: 0px;
     transform: translateY(-97%);
   }
+
   .pop-up .info {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
   }
 }
+
 /* POP UP WILL BE DISPLAYED AS A FULL WITH CHATBOX */
 
 /* <<<<<<<-----MEDIA QUERY FOR FOOTER ENDS----->>>>>>> */
@@ -1787,9 +1926,86 @@ input::placeholder {
   color: black;
   text-align: center;
 }
+.cross {
+  display: none;
+}
+.frequent-product .productdetails{
+  display: none;
+}
+.display-none{
+  display: none;
+}
+@media screen and (max-width:798px) {
+
+  .frequent-product .productdetails{
+    display: block;
+  }
+  .display-none{
+    display: block;
+  }
+  .productdetails {
+    padding: 0;
+  }
+  .cross {
+    display:block;
+  }
+  .display-block {
+    display: none;
+  }
+  .details {
+    position: static;
+  }
+  .display-none {
+    display: block;
+  }
+  .details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .material{
+   height: 20px;
+  }
+  .sticky-product {
+    user-select: none;
+    cursor: move;
+    z-index: 1000;
+    position: fixed;
+    top: calc(-50vh);
+    top: 81%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+  .sticky-product{
+    height: 100%;
+    width: 100%;
+  }
+  .sticky-product .cross{
+    z-index: 900;
+    position: fixed;
+    display: none;
+    left: 93%;
+    top:1.8rem;
+    font-size: 1.4rem;
+    color: #5f5f5f;
+    transition: all 0.3s ease;
+  }
+  .sticky-product.active{
+    top: 0%;
+    overflow: scroll;
+  }
+  .sticky-product.active .cross{
+    display: block;
+  }
+}
 
 /* ----------------product-Accordion */
 .section-product .product-accordion {
+  padding: 0 1rem;
   width: 100%;
 }
 .section-product .product-accordion .contentbox {
@@ -1820,6 +2036,7 @@ input::placeholder {
   font-size: 17px;
   transition: all 0.2s ease-in;
 }
+
 .section-product .product-accordion .label {
   font-size: 1.1rem;
 }
@@ -1987,9 +2204,10 @@ input::placeholder {
     margin-bottom: -17rem;
     margin-right: auto;
     margin-left: auto;
-    padding: 3rem 1rem 0 1rem;
+    padding: 2rem 1rem 0 1rem;
   }
 }
+
 /* ----------------//product-Accordion */
 
 /* -----------//Product-page----------- */
@@ -2004,6 +2222,7 @@ input::placeholder {
 .categories-images-main .about {
   padding: 0.5rem 1rem;
 }
+
 .categories-images-main .flex-row {
   gap: 0.5rem;
 }
@@ -2026,6 +2245,7 @@ input::placeholder {
 .about-item {
   font-size: 14px;
   color: #898989;
+  color: #898989;
   line-height: 1.5rem;
 }
 .sub-cetagories h1 {
@@ -2037,6 +2257,7 @@ input::placeholder {
 .sub-cetagories .luxury {
   text-align: center;
   font-size: 1.1rem;
+  line-height: 2rem;
   line-height: 2rem;
 }
 .sub-cetagories .discoverbtn {
@@ -2060,6 +2281,7 @@ input::placeholder {
 .sub-cetagories .main-img img {
   width: 100%;
 }
+
 /* ---------------------cetagories-page */
 
 @media screen and (max-width: 769px) {
@@ -2073,13 +2295,16 @@ input::placeholder {
 .corporate-container .grid-row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
+
 
 .slideshow-container .mySlides img {
   width: 100%;
   height: 100%;
 }
+
 
 .corporate-container .flex-column {
   gap: 4rem;
@@ -2096,6 +2321,7 @@ input::placeholder {
   align-items: center;
 }
 
+
 .corporate-container .list-address .flex-row::after {
   content: "\f054";
   position: absolute;
@@ -2111,6 +2337,7 @@ input::placeholder {
   cursor: pointer;
 }
 
+
 .corporate-container .list-address:hover {
   opacity: 0.7;
   transition: all 0.3s ease-in-out;
@@ -2119,6 +2346,7 @@ input::placeholder {
 .corporate-container .list-address::after {
   content: "";
   width: 100%;
+  height: 1px;
   height: 1px;
   border: 1px solid #e7e7e7;
   position: absolute;
@@ -2129,6 +2357,7 @@ input::placeholder {
 .corporate-container .list-address::before {
   content: "";
   width: 100%;
+  height: 1px;
   height: 1px;
   border: 1px solid #e7e7e7;
   position: absolute;
@@ -2165,6 +2394,7 @@ input::placeholder {
   font-size: 0.938rem;
   line-height: 1.4rem;
 }
+
 /* MEDIA QUERY */
 @media (max-width: 823px) {
   .corporate-container .grid-row {
@@ -2184,6 +2414,7 @@ input::placeholder {
 /*SLIDER IMAGES  */
 .mySlides {
   display: none;
+  display: none;
 }
 
 /* Slideshow container */
@@ -2194,16 +2425,19 @@ input::placeholder {
 }
 
 /* The dots/bullets/indicators */
+
 .dots {
   position: absolute;
   bottom: 3%;
   left: 50%;
+  text-align: center;
   text-align: center;
   display: flex;
   gap: 1rem;
   align-items: center;
   justify-content: center;
 }
+
 .dot {
   height: 7px;
   width: 7px;
@@ -2262,6 +2496,7 @@ input::placeholder {
 .frequent-items .price button {
   padding: 1rem;
   border-radius: 0px;
+  border-radius: 0px;
   letter-spacing: 2.2px;
   background-color: transparent;
   transition: all 0.3s ease-in-out;
@@ -2317,14 +2552,18 @@ input::placeholder {
   .frequent-items {
     flex-wrap: wrap;
   }
+  .frequent-product .container {
+    padding: 0rem 1rem;
 }
+  }
 
 @media (max-width: 532px) {
   .checkBox label {
     font-size: 1rem;
     letter-spacing: 2.2px;
   }
-}
+  }
+
 /* media query for frequently add products */
 
 /* -----------//Product-page----------- */
