@@ -5,14 +5,13 @@
     min-height: 10vh;
 }
 .about-category .heading h1{
-    color: black;
+
     font-size: 1.5rem;
     letter-spacing: 3px;
     margin: 0;
     line-height: 32px;
 }
 .about-category .heading a{
-    color: black;
     font-size: 1.5rem;
     letter-spacing: 3px;
     margin: 0;
@@ -79,9 +78,4 @@
     text-align: center;
  
  
-  }
-
-
-  .about-category .content span{
-    color: black;
   }

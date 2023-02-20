@@ -36,7 +36,6 @@ h1 {
   font-size: var(--h1-font-size);
   color: var(--font-clr);
   font-weight: 400;
-  color: var(--white-clr);
   margin-bottom: 0.275rem;
 }
 
@@ -47,7 +46,6 @@ h3 {
 }
 
 span {
-  color: var(--white-clr);
   font-size: 1em;
   font-weight: 400;
 }
@@ -2663,14 +2661,12 @@ input::placeholder {
   right: 0;
   top: 40%;
 }
-.login  h1  {
-  color: black;
+.login  h1 {
   font-size: 2rem;
 }
 /* footer log in page */
 .logIn-footer{
   padding: 1.5rem 1.375rem;
-  color: black;
   border-top: 1px solid #e1e1e1;;
 }
 .logIn-footer .terms{
