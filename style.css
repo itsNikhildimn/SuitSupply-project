@@ -134,6 +134,9 @@ i {
 
 
 /* <<<<<<<<<<<<----------HEADER CSS STARTS--------->>>>>>>>>> */
+header{
+  overflow: hidden;
+}
 .header-container .col-main{
   flex: 1;
 }
