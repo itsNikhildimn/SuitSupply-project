@@ -2199,7 +2199,7 @@ padding: 0 0.5rem;
     position: fixed;
     display: none;
     left: 90%;
-    top:.5rem;
+    top:1rem;
     font-size: 1.4rem;
     color: #5f5f5f;
     transition: all 0.3s ease;
