@@ -880,7 +880,7 @@
               </li>
             </ul>
           </div>
-
+<!-- ACCORDION -->
           <div class="product-accordion">
             <div class="contentbox">
               <div class="label">
@@ -1036,6 +1036,7 @@
               </div>
             </div>
           </div>
+          <!-- //ACCORDION -->
         </div>
       </div>
     </div>
@@ -1044,22 +1045,21 @@
 
     <!-- frequently add items -->
     <div class="relative">
-     
     <div class="sticky-product">
       <div class="cross">
-        <i class="fa-thin fa-xmark"></i>
+        <i class="fa-sharp fa-regular fa-circle-xmark"></i>
       </div>
       <section class="frequent-product">
-        <!-- FIXED-CONTENT -->
+        <!-- FIXED-CONTENT THIS IS FOR TAB DESIGN-->
         <div class="productdetails">
           <div class="details">
             <div class="product-name-price">
               <h2>Light Grey Perennial Lazio Suit</h2>
               <span class="price">$499</span>
             </div>
-            <span class="material">
+            <!-- <span class="material">
               Pure Tropical Wool by Vitale Barberis Canonico, Italy
-            </span>
+            </span> -->
 
 
             <div class="buttons-container">
@@ -1259,7 +1259,9 @@
           </div>
         </div>
 
-        <!-- //FIXED-CONTENT -->
+        <!-- //FIXED-CONTENT THIS IS FOR TAB DESIGN-->
+
+        <!-- FREQUENTLY PURCHASED TOGETHER -->
         <div class="container">
           <div class="frequently">
             <h1>FREQUENTLY PURCHASED TOGETHER</h1>
@@ -1321,6 +1323,7 @@
             </div>
           </div>
         </div>
+         <!-- //FREQUENTLY PURCHASED TOGETHER -->
       </section>
 
       <!-- frequently add items -->
@@ -1371,7 +1374,7 @@
         </div>
       </div>
     
-      <!--FOOTER STARTS  -->
+      <!--FOOTER STARTS INSIDE TAB PRODUCT POPUP -->
       <footer class="footer display-none">
         <div class="container">
           <div class="foot-nav">
@@ -1459,7 +1462,7 @@
           </div>
         </div>
       </footer>
-      <!--//FOOTER ENDS  -->
+      <!--//FOOTER ENDS  INSIDE TAB PRODUCT POPUP -->
     
     </div>
   </div>
@@ -1611,7 +1614,9 @@
   })</script>
 <script src="/main.js"></script>
 
-<script>
+
+<!-- <<<<<<<<<<js for Accordion>>>>>>>>>>-->
+    <script>
   const accordionProduct = document.getElementsByClassName('contentbox');
   for (i = 0; i < accordionProduct.length; i++) {
     accordionProduct[i].addEventListener('click', function () {
@@ -1619,7 +1624,9 @@
     });
   }
 </script>
+    <!-- <<<<<<<<<< // js for Accordion>>>>>>>>>> -->
 
+<!-- <<<<<<<<<<js for product-image-slider>>>>>>>>>>-->
 <script>
   const toshowimg = document.getElementById("main-image");
   const images = document.querySelectorAll(".sliderimg");
@@ -1632,8 +1639,9 @@
     })
   }); 
 </script>  
+<!-- <<<<<<<<<< //js for product-image-slider>>>>>>>>>> -->
 
-
+<!-- <<<<<<<<<< js for Tab details design>>>>>>>>>> -->
 <script>
 const toClickadd  =  document.querySelector('.frequent-product')
 const toActive = document.querySelector('.sticky-product')
@@ -1649,6 +1657,6 @@ toClickadd.addEventListener('pointermove', (event) => {
 
 })
 </script>
-
+<!-- <<<<<<<<<< //js for Tab details design>>>>>>>>>> -->
 
 </html>
