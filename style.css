@@ -616,12 +616,10 @@ input::placeholder {
   height: 100%;
   width: 100%;
 }
-
 .section1 .heroimg img {
   width: 100%;
   height: 100%;
 }
-
 .section1 .content {
   position: absolute;
   width: 100%;
@@ -636,7 +634,6 @@ input::placeholder {
   font-size: 40px;
   font-weight: 600;
   color: #fff;
-  
 }
 .section1 .content .white{
   color: #fff ;
@@ -662,36 +659,29 @@ input::placeholder {
   margin-bottom: 7rem;
   padding: 0.7rem;
 }
-
 .section2 .contain {
   padding: 0 0 0 0rem;
 }
-
 .section2 .contain .heading {
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .section2 .contain .about {
   padding-top: 12px;
 }
-
 .section2 .contain .about a:nth-of-type(1) {
   color: var(--font-clr);
   transition: opacity 0.3s ease;
   font-size: 1.2rem;
 }
-
 .section2 .contain .about a:nth-of-type(2) {
   font-size: 1rem;
 }
-
 .section2 .contain .about a:nth-of-type(1):hover {
   opacity: 0.6;
 }
-
 .section2 .contain .about .price {
   margin-top: 0.3rem;
   color: gray;
@@ -751,20 +741,18 @@ input::placeholder {
 }
 
 /* ------------------------//SECTION-SUIT */
-/* section3 */
+/* //section3 */
 
 /* -----------------------------section4 */
 .section4 {
   margin-bottom: 7rem;
 }
-
 .section4 .container .heading {
   margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .section4 .container {
   width: 100%;
 }
@@ -774,18 +762,15 @@ input::placeholder {
   font-weight: 400;
   color: var(--font-clr);
 }
-
 .section4 .column p {
   font-size: 20px;
   max-width: 372px;
   margin-top: 0.5rem;
   font-weight: 600;
 }
-
 .section4 .container .flex-row {
   gap: 0.7rem;
 }
-
 .section4 .container .column {
   aspect-ratio: 578/694;
   cursor: pointer;
@@ -801,11 +786,9 @@ input::placeholder {
 .section4 .container .column img {
   width: 100%;
 }
-
 .owl-carousel .owl-theme .scroll {
   overflow-x: scroll;
 }
-
 /* ------------------------------//section4 */
 /* <<<<<<<<<<----------MAIN SECTION CSS ENDS--------->>>>>>>> */
 /* SECTION 7 CSS STARTS */
@@ -1426,7 +1409,6 @@ input::placeholder {
   }
 
   /* -------------------------//section1 */
-
   /* ------------------------section3-suit */
   .section3 .container .content {
     width: 99vw;
@@ -1773,6 +1755,8 @@ input::placeholder {
 /* ================= /MEDIA QUERIES ENDS============= */
 
 /* -----------Product-page----------- */
+
+/* -----Button - Font Styling -----  */
 .section-product h2 {
   font-size: 30px;
   line-height: 28px;
@@ -1784,46 +1768,16 @@ input::placeholder {
   padding-left: 1rem;
   margin-bottom: 1rem;
 }
-.section-product {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  margin-top: 3rem;
-}
-.section-product .grid-row {
-  grid-template-columns: 1fr 3fr 2fr;
-}
-.mainscroller {
-  max-width: 455px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.scrolling-images-container {
-  position: sticky;
-  top: calc(10vh);
-  margin-bottom: 20rem;
-}
-.section-product .scrolling-images-container .sliderimg {
-  cursor: pointer;
-  opacity: 0.6;
-  transition: all 0.3s ease;
-  max-width: 103px;
-  height: 150px;
-  margin-inline: auto;
-  margin-bottom: 1rem;
-  border: 1px solid transparent;
-}
-.section-product .scrolling-images-container .sliderimg:hover {
-  opacity: 1;
-  border: 1px solid black;
-}
-.section-product .scrolling-images-container .sliderimg--active {
-  opacity: 1;
-  border: 1px solid black;
-}
-.section-product .scrolling-images-container .sliderImg img {
-  width: 100%;
-  height: 100%;
+.section-product button {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid rgb(196, 196, 196);
 }
 .section-product .wishlist {
   min-width: 46px;
@@ -1853,6 +1807,26 @@ input::placeholder {
   margin-top: 0.5rem;
   background-color: #fff;
 }
+/* -----//Button - Font Styling -----  */
+.section-product {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 3rem;
+}
+.section-product .grid-row {
+  grid-template-columns: 1fr 3fr 2fr;
+}
+.mainscroller {
+  max-width: 455px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.scrolling-images-container {
+  position: sticky;
+  top: calc(10vh);
+  margin-bottom: 20rem;
+}
 .section-product .customize img {
   width: 20px;
   margin-right: 0.5rem;
@@ -1861,16 +1835,27 @@ input::placeholder {
 .section-product .customize:hover img {
   transform: rotate(360deg);
 }
-.section-product button {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 46px;
-  border-radius: 5px;
-  font-size: 15px;
-  font-weight: 500;
-  border: 1px solid rgb(196, 196, 196);
+.section-product .scrolling-images-container .sliderimg {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  max-width: 103px;
+  height: 150px;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+}
+.section-product .scrolling-images-container .sliderimg:hover {
+  opacity: 1;
+  border: 1px solid black;
+}
+.section-product .scrolling-images-container .sliderimg--active {
+  opacity: 1;
+  border: 1px solid black;
+}
+.section-product .scrolling-images-container .sliderImg img {
+  width: 100%;
+  height: 100%;
 }
 .section-product .buttons-container .flex-row {
   gap: 0.5rem;
@@ -1879,13 +1864,11 @@ input::placeholder {
   font-size: 20px;
   color: var(--font-clr);
 }
-
 .section-product .product-images {
   position: relative;
   width: 100%;
   height: 100%;
 }
-
 .section-product img {
   width: 100%;
 }
@@ -1918,16 +1901,14 @@ input::placeholder {
 .details {
   width: 100%;
   position: sticky;
-  top: calc(25vh);
+  top: calc(14vh);
   margin-bottom: 20rem;
 }
-
 .section-product .product-details .product-name-price {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .section-product .productdetails .offers {
   margin: 1.5rem 0;
   font-size: 16px;
@@ -1943,77 +1924,10 @@ input::placeholder {
 .display-none{
   display: none;
 }
-@media screen and (max-width:798px) {
+/* ----------------------------------product-Accordion */
 
-  .frequent-product .productdetails{
-    display: block;
-  }
-  .display-none{
-    display: block;
-  }
-  .productdetails {
-    padding: 0;
-  }
-  .cross {
-    display:block;
-  }
-  .display-block {
-    display: none;
-  }
-  .details {
-    position: static;
-  }
-  .display-none {
-    display: block;
-  }
-  .details{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .material{
-   height: 20px;
-  }
-  .sticky-product {
-    user-select: none;
-    cursor: move;
-    z-index: 1000;
-    position: fixed;
-    top: calc(-50vh);
-    top: 80%;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    overflow: hidden;
-    transition: all 0.4s ease;
-  }
-  .sticky-product{
-    height: 100%;
-    width: 100%;
-  }
-  .sticky-product .cross{
-    z-index: 900;
-    position: fixed;
-    display: none;
-    left: 93%;
-    top:1.8rem;
-    font-size: 1.4rem;
-    color: #5f5f5f;
-    transition: all 0.3s ease;
-  }
-  .sticky-product.active{
-    top: 0%;
-    overflow: scroll;
-  }
-  .sticky-product.active .cross{
-    display: block;
-  }
-}
-
-/* ----------------product-Accordion */
 .section-product .product-accordion {
-  padding: 0 1rem;
+padding: 0 0.5rem;
   width: 100%;
 }
 .section-product .product-accordion .contentbox {
@@ -2146,6 +2060,8 @@ input::placeholder {
 .section-product .about a {
   font-size: 16px;
 }
+
+/* -------------------------------<<<<<<<<<Product-section -media */
 @media screen and (max-width: 1180px) {
   .section-product .product-accordion {
     width: 80%;
@@ -2155,7 +2071,6 @@ input::placeholder {
     color: #fff;
     min-width: 250px;
   }
-
   .section-product .customize {
     min-width: 304px;
     margin-top: 0.5rem;
@@ -2181,11 +2096,6 @@ input::placeholder {
     margin-top: 0.5rem;
     background-color: #fff;
   }
-  .productdetails {
-    max-width: 455px;
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
 }
 @media screen and (max-width: 798px) {
   .section-product .grid-row {
@@ -2207,6 +2117,8 @@ input::placeholder {
   .section-product .product-accordion {
     width: 354px;
   }
+
+  /* ----------media--for tab-design of product-page- */
   .productdetails {
     max-width: 455px;
     margin-bottom: -17rem;
@@ -2214,11 +2126,76 @@ input::placeholder {
     margin-left: auto;
     padding: 2rem 1rem 0 1rem;
   }
+  .frequent-product .productdetails{
+    display: block;
+  }
+  .display-none{
+    display: block;
+  }
+  .productdetails {
+    padding: 0;
+  }
+  .cross {
+    display:block;
+  }
+  .display-block {
+    display: none;
+  }
+  .details {
+    position: static;
+  }
+  .display-none {
+    display: block;
+  }
+  .details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .material{
+   height: 20px;
+  }
+  .sticky-product {
+    user-select: none;
+    cursor: move;
+    z-index: 1000;
+    position: fixed;
+    top: calc(-50vh);
+    top: 80%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+  .sticky-product{
+    height: 100%;
+    width: 100%;
+  }
+  .sticky-product .cross{
+    z-index: 900;
+    position: fixed;
+    display: none;
+    left: 90%;
+    top:.5rem;
+    font-size: 1.4rem;
+    color: #5f5f5f;
+    transition: all 0.3s ease;
+  }
+  .sticky-product.active{
+    top: 0%;
+    overflow: scroll;
+  }
+  .sticky-product.active .cross{
+    display: block;
+  }
 }
+/* -----media-for tab-design of product-page- */
+/* ----------------------------------//Product-section -media */
+/* -------------------------------------------<<<<<<<<<<<<<//product-Accordion */
+/* ---------------------------------------------------------------//Product-page----------- */
 
-/* ----------------//product-Accordion */
-
-/* -----------//Product-page----------- */
 
 /* ---------------------cetagories-page */
 .categories-images-main {
@@ -2693,12 +2670,15 @@ input::placeholder {
 /* LOG IN PAGE CSS ENDS */
 
 
-/* ------------------------BOOKMARK - PAGE */
 
+
+/* ------------------------BOOKMARK - PAGE */
 .bookmark{
   height: 78vh;
   width: 100%;
 }
+
+/* -------------Font-styling */
 .bookmark h1{
   color: var(--font-clr);
   font-size: 31px;
@@ -2712,6 +2692,9 @@ input::placeholder {
   margin-bottom: 0.5rem;
   color: #2d2e2c;
 }
+/* -------------//Font-styling */
+
+/* ------------button-styling */
 .bookmark .login{
   height:46px;
   width: 218px;
@@ -2721,6 +2704,10 @@ input::placeholder {
 background-color: var(--font-clr);
 color: #fff;
 border-radius: 5px;
+border: 1px solid gainsboro;
+}
+.bookmark .login:hover{
+  border: 1px solid black;
 }
 .bookmark .newarrival{
   height:46px;
@@ -2731,6 +2718,12 @@ border-radius: 5px;
   border-radius: 5px;
   border: 1px solid gainsboro;
 }
+.bookmark .newarrival:hover{
+  border: 1px solid black;
+}
+/* ------------//button-styling */
+
+
 .bookmark .container{
   height: 100%;
   width: 100%;
