@@ -736,11 +736,10 @@ input::placeholder {
 }
 .section3 .section1 .content{
   padding: 0 0 0 0px;
-  height: 100%;
   width: 100%;
   display: flex;
   position: absolute;
-  top: 0;
+  top: 50%;
   align-items: center;
   justify-content: center;
 }
