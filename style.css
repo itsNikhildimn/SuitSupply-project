@@ -2163,13 +2163,11 @@ padding: 0 0.5rem;
   .display-block {
     display: none;
   }
-  .details {
-    position: static;
-  }
   .display-none {
     display: block;
   }
   .details{
+    position: static;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2179,12 +2177,13 @@ padding: 0 0.5rem;
    height: 20px;
   }
   .sticky-product {
+    padding-top: 3rem;
     user-select: none;
     cursor: move;
     z-index: 1000;
     position: fixed;
     top: calc(-50vh);
-    top: 80%;
+    top: 82%;
     width: 100%;
     height: 100%;
     background-color: #fff;
