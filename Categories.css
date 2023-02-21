@@ -34,15 +34,14 @@
     margin: 2rem 0;
 }
 .filters button{
-    padding: 1.25rem;
-    color: #2d2e2c;
+    padding: 0.875rem 1.25rem;
+    color: var(--font-clr);
     border:1px solid #e1e1e1;
     background-color: #fff;
     font-size: 0.875rem;
     font-weight: 300;
     text-align: center;
     transition: .2s ease-in-out;
-    margin-top: 0rem;
 }
 .filters button:hover{
     border-color: #898989;
@@ -79,4 +78,14 @@
     text-align: center;
  
  
+  }
+
+
+  @media (max-width:750px){
+    .filters{
+      gap: 1rem;
+    }
+    .filters button{
+      flex: 1;
+    }
   }
