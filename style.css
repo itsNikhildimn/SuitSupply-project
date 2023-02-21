@@ -1967,6 +1967,8 @@ padding: 0 0.5rem;
 .section-product .discription {
   color: #898989;
   margin: 1rem 0 2rem 0;
+  padding: 0 2rem;
+
 }
 .section-product .discription ul li {
   list-style: initial;
