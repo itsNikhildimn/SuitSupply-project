@@ -263,7 +263,8 @@ setTimeout(showSlides, 5000); // Change image every 2 seconds
 
 // SLIDER IMAGES -->
 
-// new in page text read more funtionality //
+
+// new in page text read more & read less funtionality //
 function myFunction() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
@@ -279,4 +280,4 @@ function myFunction() {
       moreText.style.display = "inline";
     }
   }
-// new in page text read more funtionality //
+// new in page text read more & read less  funtionality //
