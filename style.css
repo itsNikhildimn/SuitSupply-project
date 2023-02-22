@@ -2580,7 +2580,7 @@ padding: 0 0.5rem;
   align-items: center;
   justify-content: center;
   margin: 2rem 0rem;
-  min-height: 75vh;
+  min-height: 76vh;
 }
 .login {
   display: flex;
@@ -2675,6 +2675,7 @@ padding: 0 0.5rem;
 }
 .logIn-footer span{
   color: #919090;
+  cursor: pointer;
 }
 .logIn-footer span:hover{
   color: #b4b1b1;

@@ -93,34 +93,10 @@ textSlide.addEventListener('transitionend', () => {
 })();
 // //HEADER OFF-SET FUNCTION 
 
-
-// FOR TOGGLING HAMBUGER MENU //
-const menuBar = document.querySelector("#menuBar");
-const slide = document.querySelector(".header-nav");
-const body = document.querySelector("body");
-
-menuBar.addEventListener('click', () => {
-    slide.classList.add('active');
-    body.classList.add("active");
-});
-// FOR TOGGLING HAMBUGER MENU //
-
-// FOR TOGGLING add to cart MENU //
-const cartIcon = document.querySelector("#CartIcon");
-const addToCart = document.querySelector(".AddtoCart");
-
-cartIcon.addEventListener('click', () => {
-    addToCart.classList.add('active');
-    body.classList.add("active");
-});
-
-
-// FOR TOGGLING add to cart MENU //
-
-
-
 // FOR TOGGLING MOBILE HAMBUGER MENU //
 const mobileMenuIcon = document.querySelector("#mobileMenuIcon");
+const slide = document.querySelector(".header-nav");
+const body = document.querySelector("body");
 mobileMenuIcon.addEventListener('click', () => {
     slide.classList.add('active');
     body.classList.add("active");
@@ -148,6 +124,7 @@ arrow2.forEach(element => {
 });
 // FOR OPENING SUB-MENU INNER-SLIDE //
 
+
 // CLICK EVENT ON BACK ARROW TO CLOSE CURRENT SUB-MENU INNER-SLIDE
 const close2 = document.querySelectorAll(".header-search");
 
@@ -171,8 +148,6 @@ close.forEach(element => {
 });
 // CLICK EVENT ON BACK ARROW TO CLOSE CURRENT SUB-MENU SLIDE
 
-
-
 // when click on OVERLAY then remove main slider
 const main = document.querySelector(".header-overlay");
 
@@ -181,6 +156,27 @@ main.addEventListener('click', () => {
     body.classList.remove("active");
 });
 // when click on OVERLAY then remove main slider
+
+
+// REMOVE SUB MENU SLIDE WHEN CLICK ON HEADER OVERLAY //
+const main2 = document.querySelector(".header-overlay");
+main2.addEventListener("click", () => {
+    arrow.forEach(arr => arr.classList.remove("active"))
+    this.classList.add("active");
+    
+})
+// REMOVE SUB MENU SLIDE WHEN CLICK ON HEADER OVERLAY //
+
+
+// FOR TOGGLING add to cart MENU //
+const cartIcon = document.querySelector("#CartIcon");
+const addToCart = document.querySelector(".AddtoCart");
+
+cartIcon.addEventListener('click', () => {
+    addToCart.classList.add('active');
+    body.classList.add("active");
+});
+// FOR TOGGLING add to cart MENU //
 
 // when click on overlay add to cart section removes from active
 const overlay2 = document.querySelector(".header-overlay2");
@@ -191,77 +187,7 @@ overlay2.addEventListener('click', () => {
 });
 // when click on overlay add to cart section removes from active
 
-// REMOVE SUB MENU SLIDE WHEN CLICK ON HEADER OVERLAY //
-const main2 = document.querySelector(".header-overlay");
-main2.addEventListener("click", () => {
-    arrow.forEach(arr => arr.classList.remove("active"))
-    this.classList.add("active");
-
-})
-// REMOVE SUB MENU SLIDE WHEN CLICK ON HEADER OVERLAY //
-
 //<<<<<<<<<<<----------HEADER JS FUNCTIONS ENDS---------------->>>>>>>>>>>>>>>>>>
-
-
-
-
-
-
-//<<<<<<<<<<<----------FOOTER JS FUNCTIONS---------------->>>>>>>>>>>>>>>>>>
-
-// ACCORDION FOR FOOTER SECTION
-const accordion = document.getElementsByClassName('contentBx');
-for (i = 0; i < accordion.length; i++) {
-    accordion[i].addEventListener('click', function () {
-        this.classList.toggle('active')
-    });
-}
-// ACCORDION FOR FOOTER SECTION
-
-// FOR POP-UP CHATBOX
-const openChatBox = document.querySelector(".faq-icon")
-const chatBox = document.querySelector(".pop-up");
-openChatBox.addEventListener("click", () => {
-    chatBox.classList.toggle('active')
-    openChatBox.classList.toggle('active')
-});
-
-
-// Close popup from left angle arrow in mobile design
-const closePopup = document.querySelector("#popUp-close");
-
-closePopup.addEventListener("click",()=>{
-chatBox.classList.remove("active")
-openChatBox.classList.remove("active")
-})
-
-// Close popup from left angle arrow in mobile design
-// /FOR POP-UP CHATBOX
- 
-//<<<<<<<<<<<----------FOOTER JS FUNCTIONS ENDS---------------->>>>>>>>>>>>>>>>>>
-
-// SLIDER IMAGES -->
-  let slideIndex = 0;
-  showSlides();
-
-function showSlides() {
-let i;
-let slides = document.getElementsByClassName("mySlides");
-let dots = document.getElementsByClassName("dot");
-for (i = 0; i < slides.length; i++) {
-  slides[i].style.display = "none";  
-}
-slideIndex++;
-if (slideIndex > slides.length) {slideIndex = 1}    
-for (i = 0; i < dots.length; i++) {
-  dots[i].className = dots[i].className.replace(" active", "");
-}
-slides[slideIndex-1].style.display = "block";  
-dots[slideIndex-1].className += " active";
-setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
-
-// SLIDER IMAGES -->
 
 
 // new in page text read more & read less funtionality //
@@ -281,3 +207,66 @@ function myFunction() {
     }
   }
 // new in page text read more & read less  funtionality //
+
+
+
+
+
+//<<<<<<<<<<<----------FOOTER JS FUNCTIONS---------------->>>>>>>>>>>>>>>>>>
+
+// ACCORDION FOR FOOTER SECTION
+const accordion = document.getElementsByClassName('contentBx');
+for (i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener('click', function () {
+        this.classList.toggle('active')
+    });
+}
+// ACCORDION FOR FOOTER SECTION
+
+// SLIDER IMAGES -->
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";  
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}    
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+// SLIDER IMAGES -->
+
+// FOR POP-UP CHATBOX
+// const openChatBox = document.querySelector(".faq-icon")
+// const chatBox = document.querySelector(".pop-up");
+// openChatBox.addEventListener("click", () => {
+//     chatBox.classList.toggle('active')
+//     openChatBox.classList.toggle('active')
+// });
+
+
+// // Close popup from left angle arrow in mobile design
+// const closePopup = document.querySelector("#popUp-close");
+
+// closePopup.addEventListener("click",()=>{
+// chatBox.classList.remove("active")
+// openChatBox.classList.remove("active")
+// })
+
+// Close popup from left angle arrow in mobile design
+// /FOR POP-UP CHATBOX
+ 
+//<<<<<<<<<<<----------FOOTER JS FUNCTIONS ENDS---------------->>>>>>>>>>>>>>>>>>
+
+
+
+
