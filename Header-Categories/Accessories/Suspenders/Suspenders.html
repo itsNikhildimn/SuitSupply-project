@@ -973,5 +973,41 @@
   </footer>
   <!--//FOOTER ENDS  -->
   <script src="/main.js"></script>
+  <script>
+    const filterSlider = document.querySelector(".filter-slider");
+    const filterbtn = document.querySelector(".filter");
+    const closebtn = document.querySelector(".close-icon");
+
+    filterbtn.addEventListener("click",()=>{
+     filterSlider.classList.add("active")
+     body.classList.add("active");
+    });
+    closebtn.addEventListener("click",()=>{
+     filterSlider.classList.remove("active");
+     body.classList.remove("active");
+    });
+
+
+    const sortSlider = document.querySelector(".sort-slider");
+    const sortbtn = document.querySelector(".sort-by");
+    const closebtn2 = document.querySelector(".close-icon2");
+    sortbtn.addEventListener("click",()=>{
+     sortSlider.classList.add("active");
+     body.classList.add("active");
+    });
+    closebtn2.addEventListener("click",()=>{
+     sortSlider.classList.remove("active");
+     body.classList.remove("active");
+    });
+
+
+
+    const accordion3 = document.getElementsByClassName('filter-accordion');
+    for (i = 0; i < accordion3.length; i++) {
+    accordion3[i].addEventListener('click', function () {
+        this.classList.toggle('active')
+    });
+}
+  </script>
 </body>
 </html>
