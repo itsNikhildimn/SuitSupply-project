@@ -148,6 +148,9 @@ close.forEach(element => {
 });
 // CLICK EVENT ON BACK ARROW TO CLOSE CURRENT SUB-MENU SLIDE
 
+
+
+
 // when click on OVERLAY then remove main slider
 const main = document.querySelector(".header-overlay");
 
@@ -214,6 +217,7 @@ function myFunction() {
 
 //<<<<<<<<<<<----------FOOTER JS FUNCTIONS---------------->>>>>>>>>>>>>>>>>>
 
+
 // ACCORDION FOR FOOTER SECTION
 const accordion = document.getElementsByClassName('contentBx');
 for (i = 0; i < accordion.length; i++) {
@@ -264,6 +268,7 @@ setTimeout(showSlides, 5000); // Change image every 5 seconds
 
 // Close popup from left angle arrow in mobile design
 // /FOR POP-UP CHATBOX
+
  
 //<<<<<<<<<<<----------FOOTER JS FUNCTIONS ENDS---------------->>>>>>>>>>>>>>>>>>
 
