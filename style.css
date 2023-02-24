@@ -31,7 +31,6 @@ body {
     url(/Founders_Grotesk/FoundersGrotesk-Medium.otf),
     url(/Founders_Grotesk/FoundersGroteskXCond-Bold.otf);
 }
-
 h1 {
   font-size: var(--h1-font-size);
   color: var(--font-clr);
@@ -249,10 +248,28 @@ header {
   align-items: center;
   gap: 1rem;
 }
-
-.header-container .icon img {
-  transform: scale(1);
+/* susu icons */
+@font-face{
+  font-family: iconfont;
+  src: url(/Susuicons.woff2);
 }
+.susu-icon-profile:before {
+  content: "\EA1B";
+  font-family: iconfont;
+}
+.susu-icon-wishlist:before {
+  content: "\EA25";
+  font-family: iconfont;
+}
+.susu-icon-bag:before {
+  content: "\EA03";
+  font-family: iconfont;
+}
+.susu-icon{
+  font-size: 20px;
+}
+/* susu icons */
+
 
 .header-container .icon img {
   transition: color 0.3s ease-in-out;
