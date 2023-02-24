@@ -2190,7 +2190,7 @@ padding: 0 0.5rem;
     justify-content: center;
     flex-direction: column;
   }
-  .material{
+  .productdetails .material{
    height: 20px;
   }
   .sticky-product {
@@ -2708,68 +2708,69 @@ padding: 0 0.5rem;
 
 
 
-
 /* ------------------------BOOKMARK - PAGE */
-.bookmark{
-  height: 78vh;
+.bookmark {
+  height: 60vh;
   width: 100%;
-}
-
-/* -------------Font-styling */
-.bookmark h1{
+ }
+ 
+ /* -------------Font-styling */
+ .bookmark h1 {
   color: var(--font-clr);
   font-size: 31px;
   font-weight: 900;
   margin-bottom: 0.5rem;
-}
-.bookmark p{
+ }
+ .bookmark p {
   max-width: 350px;
   font-size: 17px;
   line-height: 22px;
   margin-bottom: 0.5rem;
   color: #2d2e2c;
-}
-/* -------------//Font-styling */
-
-/* ------------button-styling */
-.bookmark .login{
-  height:46px;
+ }
+ /* -------------//Font-styling */
+ 
+ /* ------------button-styling */
+ .bookmark .login {
+  height: 46px;
   width: 218px;
   display: flex;
   align-items: center;
   justify-content: center;
-background-color: var(--font-clr);
-color: #fff;
-border-radius: 5px;
-border: 1px solid gainsboro;
-}
-.bookmark .login:hover{
-  border: 1px solid black;
-}
-.bookmark .newarrival{
-  height:46px;
+  background-color: var(--font-clr);
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  transition: all 0.2s ease-in-out;
+ }
+ .bookmark .login:hover {
+  background-color: #000;
+ }
+ .bookmark .newarrival {
+  height: 46px;
   width: 218px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  border: 1px solid gainsboro;
-}
-.bookmark .newarrival:hover{
-  border: 1px solid black;
-}
-/* ------------//button-styling */
-
-
-.bookmark .container{
+  border: 1px solid #e1e1e1;
+     background-color: #fff;
+    transition: all 0.2s ease-in-out;
+ }
+ .bookmark .newarrival:hover {
+  border-color: #898989;
+ }
+ /* ------------//button-styling */
+ 
+ .bookmark .container {
   height: 100%;
   width: 100%;
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-}
-.bookmark .container .bookmark-content{
-    display: flex;
+ }
+ .bookmark .container .bookmark-content {
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -2777,5 +2778,6 @@ border: 1px solid gainsboro;
   gap: 1rem;
   max-width: 570px;
   margin-inline: auto;
-}
-/* ------------------------//BOOKMARK - PAGE */
+ }
+ /* ------------------------//BOOKMARK - PAGE */
+ 
