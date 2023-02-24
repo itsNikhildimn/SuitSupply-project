@@ -58,10 +58,10 @@
   top: 0;
   bottom: 0;
   left: 0;
+  z-index:10001;
   background-color: var(--white-clr);
   transform: translateX(-120%);
   transition: transform 0.4s cubic-bezier(0.2, 0.4, 0.2, 1);
-  z-index: 1000;
   width: 28.375rem;
   padding: 1rem 0rem;
   min-height: 100vh;
@@ -355,5 +355,19 @@
   }
   .filters button {
     flex: 1;
+  }
+  .filter-slider{
+    width: 23.25rem;
+  }
+  .sort-slider{
+    width: 23.25rem;
+  }
+}
+@media (max-width: 480px) {
+.filter-slider{
+    width: 100%;
+  }
+.sort-slider{
+    width: 100%;
   }
 }

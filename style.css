@@ -170,7 +170,7 @@ header {
   min-height: 3.438rem;
   background: var(--white-clr);
   border: 1px solid var(--bg-clr);
-  z-index: 999;
+  z-index: 1000;
   transition: all 0.3s ease-out;
 }
 .account-icon::before {
@@ -274,7 +274,7 @@ header {
   background-color: var(--white-clr);
   transform: translateX(-120%);
   transition: transform 0.4s cubic-bezier(0.2, 0.4, 0.2, 1);
-  z-index: 1000;
+  z-index: 999;
   width: 28.375rem;
   padding: 0 2.125rem;
   min-height: 100vh;
@@ -443,7 +443,7 @@ body.active {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 999;
   visibility: hidden;
   transform: translate(120%);
   transition: all 0.2s ease;
