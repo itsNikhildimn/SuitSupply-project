@@ -2303,6 +2303,7 @@ input::placeholder {
 /* ---------------------cetagories-page */
 .categories-images-main {
   width: 100%;
+  margin: 2rem 0;
 }
 .categories-images-main img {
   width: 100%;
