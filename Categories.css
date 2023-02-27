@@ -15,6 +15,7 @@
   letter-spacing: 3px;
   margin: 0;
   line-height: 32px;
+  font-family: 'Reckless-regular';
 }
 .about-category .heading h1 {
   font-weight: bold;
@@ -368,6 +369,14 @@
   .sort-slider{
     width: 23.25rem;
   }
+  .about-category .heading a {
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
+  .about-category .heading h1 {
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
 }
 @media (max-width: 480px) {
 .filter-slider{
