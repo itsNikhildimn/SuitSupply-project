@@ -1666,9 +1666,41 @@ $(window).scroll(function() {
 
   toClickCross.addEventListener('click', () => {
     toActive.classList.remove('active')
-    toActive.scrollTop = 0;
+    // toActive.scrollTop = 0;
+     toActive.style.top ="77%"
   })
 </script>
 <!-- <<<<<<<<<< //js for Tab details design>>>>>>>>>> -->
+
+<script>
+    $(document).ready(function() {
+     var startY, endY, dragDistance = 0 , ofTop = 0;
+     ofTop = jQuery('.sticky-product').position().top;
+     console.log(ofTop);
+     $(".sticky-product").on("touchstart", function(event) {
+       startY = event.originalEvent.touches[0].pageY;
+       dragDistance = 0;
+     });
+   
+     $(".sticky-product").on("touchmove", function(event) {
+       event.preventDefault();
+       endY = event.originalEvent.touches[0].pageY;
+       dragDistance = endY - startY;
+       if (dragDistance < 0) {
+        topP = parseInt(ofTop -  Math.abs(dragDistance))
+        console.log(parseInt(ofTop -  Math.abs(dragDistance)));
+        if(topP >= 0){
+         $(".sticky-product").css("top",  topP);
+         toActive.classList.add('active');
+        }
+       }
+     });
+   
+     $(".sticky-product").on("touchend", function(event) {
+        toActive.classList.add('active');
+        $(".sticky-product").css("top", "0");
+     });
+   });
+</script>
 
 </html>
