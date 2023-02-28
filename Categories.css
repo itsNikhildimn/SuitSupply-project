@@ -353,6 +353,11 @@
   text-align: center;
 }
 
+
+
+/* -------------MEDIA QUERY CATEGORIES SECTION STARTS--------- */
+
+
 @media (max-width: 750px) {
   .about-category br {
     display: none;
@@ -378,6 +383,8 @@
     white-space: nowrap;
 }
 }
+
+
 @media (max-width: 480px) {
 .filter-slider{
     width: 100%;
@@ -386,3 +393,45 @@
     width: 100%;
   }
 }
+
+
+@media screen and (max-width: 769px) {
+  .categories-images-main .flex-row {
+    gap: 2.5rem;
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 823px) {
+  .corporate-container .grid-row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .corporate-container .flex-column {
+    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.25rem 0;
+  }
+}
+
+
+/* media query for frequently add products */
+@media (max-width: 785px) {
+  .frequent-items {
+    flex-wrap: wrap;
+  }
+  .frequent-product .container {
+    padding: 0rem 1rem;
+  }
+}
+
+@media (max-width: 532px) {
+  .checkBox label {
+    font-size: 1rem;
+    letter-spacing: 2.2px;
+  }
+}
+/* media query for frequently add products */
+
+/* -------------MEDIA QUERY CATEGORIES SECTION ENDS--------- */

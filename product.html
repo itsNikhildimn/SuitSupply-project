@@ -1643,7 +1643,7 @@ $(document).ready(function() {
 $(window).scroll(function() {
 		var scrollDistance = $(window).scrollTop();
 		$('.section').each(function(i) {
-				if ($(this).position().top <= scrollDistance) {
+				if ($(this).position().top-600 <= scrollDistance) {
 						$('.sliderimg--active').removeClass('sliderimg--active');
 						$('.sliderimg').eq(i).addClass('sliderimg--active');
 				}
