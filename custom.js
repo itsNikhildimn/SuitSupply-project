@@ -12210,7 +12210,7 @@
 
     function z(t) {
         var e = document.querySelector(".js-pdp-info-top").offsetHeight + document.querySelector(".js-pdp-swipe-indicator").offsetHeight;
-        $(".pdp-usp").length && (e -= Number($(".pdp-usp").css("margin-top").slice(0, -2)) + Number($(".pdp-usp").css("margin-bottom").slice(0, -2)) + 20), f.style.setProperty("--mobile-info-visible", "".concat(160, "px")), l()(t) && setTimeout(t, 400)
+        $(".pdp-usp").length && (e -= Number($(".pdp-usp").css("margin-top").slice(0, -2)) + Number($(".pdp-usp").css("margin-bottom").slice(0, -2)) + 20), f.style.setProperty("--mobile-info-visible", "".concat(183, "px")), l()(t) && setTimeout(t, 400)
     }
 
     function L() {
