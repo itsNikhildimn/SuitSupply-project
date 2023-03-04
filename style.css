@@ -1313,6 +1313,7 @@ input::placeholder {
   font-weight: 500;
   border: 1px solid rgb(196, 196, 196);
 }
+
 .section-product .wishlist {
   min-width: 46px;
   height: 46px;
@@ -2131,9 +2132,9 @@ width: 100%;
   margin-inline: auto;
 }
 /* ------------------------//BOOKMARK - PAGE */
-
-
-
+.pdp-close-info{
+  display: none;
+}
 
 /* <<<<<<<<<<<<<<<<---------------ALL MEDIA QUERIES---------->>>>>>>>>>>>>>>>> */
 
@@ -2724,52 +2725,17 @@ width: 100%;
   .productdetails .material {
     font-size: 12px;
   }
-  /* .sticky-product {
-    user-select: none;
-    cursor: move;
-    z-index: 1000;
-    position: fixed;
-    top: calc(-50vh);
-    top: 77%;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    transition: all 0.4s ease;
-    background-color: transparent !important;
-} */
-  /* .section-product .discription {
-    color: #898989;
-    margin: 1rem 0 2rem 0;
-    padding: 0 14px;
+  .checkBox select {
+    height: 30px;
+    width: 40px;
 }
-  .sticky-product {
-    height: 100%;
-    width: 100%;
-  }
-  .sticky-product .cross {
-    z-index: 900;
-    position: fixed;
-    display: none;
-    left: 90%;
-    top: 1rem;
-    font-size: 1.4rem;
-    color: #5f5f5f;
-    transition: all 0.3s ease;
-  }
-  .sticky-product.active {
-    top: 0%;
-    overflow: scroll;
-  }
-  .sticky-product.active .cross {
-    display: block;
-  }
-  .sticky-product{
-    border-top: 1px solid #e1e1e1;
-  } */
+
   .frequently h1 {
     color: black;
     font-size: 1.2rem;
   }
+
+  /* ---------Draggable function css ------------*/ 
   .pdp-info {
     position: fixed!important;
     background-color: transparent;
@@ -2781,23 +2747,26 @@ width: 100%;
     overflow: hidden;
     transition: transform .3s ease,top .2s ease-in-out .5s;
     z-index: 1000;
-}
+  }
   .js-pdp-swipe-btn{
-     background-color:transparent !important;
+    background-color:transparent !important;
   }
   .pdp-swipe-indicator {
     display: flex;
     justify-content: center;
     transition: opacity .3s,visibility .3s;
-}
-.pdp-swipe-btn {
-  padding: 5px 10px;
-  background-color: transparent;
-  border: none !important;
-  border: 0;
-  cursor: pointer;
-}.pdp-swipe-btn:after {
-  content: "";
+  }
+  .pdp-swipe-btn {
+    display: block;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none !important;
+    border: 0;
+    cursor: pointer;
+    height: 18px !important;
+  }
+  .pdp-swipe-btn:after {
+    content: "";
   display: block;
   width: 50px;
   height: 3px;
@@ -2848,7 +2817,15 @@ width: 100%;
 .panel-is-visible .pdp-info-top {
   padding-top: 29px;
 }
-
+.pdp-info.is-ready {
+  top: calc(100% - var(--mobile-info-visible));
+  touch-action: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transform: translate3d(0px, -662px, 0px);
+}
+/* ---------Draggable function css ------------*/ 
 
 }
 /* -------------MEDIA QUERY PRODUCT SECTION ENDS--------- */
