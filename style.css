@@ -12,16 +12,19 @@
   --white-clr: #fff;
   --h1-font-size: 3em;
   --h3-font-size: 1.25em;
-  --p4-font-size: 0.875em;
+  --p4-font-size: 1em;
   --p5-font-size: 1em;
   --spacer: 1.25rem;
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
   min-height: 100vh;
   font-family: myfont;
   letter-spacing: 0.12rem;
+  font-family: Founders-regular;
 }
 
 @font-face {
@@ -36,21 +39,13 @@ body {
   font-family: Founders-light;
   src: url(/Fonts/founders-grotesk-web-light.woff2);
 }
-@font-face {
-  font-family: Reckless-medium;
-  src: url(/Fonts/RecklessNeue-Medium.woff2);
-}
-@font-face {
-  font-family: Reckless-regular;
-  src: url(/Fonts/RecklessNeue-Regular.woff2);
-}
 
 h1 {
   font-size: var(--h1-font-size);
   color: var(--font-clr);
   font-weight: 400;
   margin-bottom: 0.275rem;
-  font-family: Reckless-regular;
+  
   font-weight: 500;
 }
 
@@ -69,7 +64,7 @@ span {
 a {
   text-decoration: none;
   cursor: pointer;
-  font-family: "Founders-regular";
+  
 }
 
 button {
@@ -97,7 +92,7 @@ button {
 
 li {
   list-style: none;
-  font-family: "Founders-regular";
+  
 }
 
 main .heading h3,
@@ -246,6 +241,7 @@ header {
 .hamburger-icon .menuText {
   font-size: 0.5rem;
   color: black;
+  font-weight: 700;
 }
 
 .header-container .column:nth-of-type(3) i:hover {
@@ -686,7 +682,7 @@ input::placeholder {
   gap: 0.5rem;
 }
 .section1 .content h1 {
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 600;
   color: #fff;
 }
@@ -729,7 +725,7 @@ input::placeholder {
   color: var(--font-clr);
   transition: opacity 0.3s ease;
   font-size: 1.2rem;
-  font-family: "Founders-regular";
+  
 }
 .section2 .contain .about a:nth-of-type(2) {
   font-size: 1rem;
@@ -741,7 +737,7 @@ input::placeholder {
   margin-top: 0.3rem;
   color: gray;
   font-weight: 300;
-  font-family: "Founders-regular";
+  
 }
 .section2 .about {
   text-align: center;
@@ -770,8 +766,8 @@ input::placeholder {
   justify-content: center;
 }
 .section3 .section1 .content h4 {
-  font-size: 52px;
-  font-family: Reckless-regular;
+  font-size: 4rem;
+  
   color: #fff;
 }
 .section3 .container {
@@ -853,7 +849,7 @@ input::placeholder {
 /* TYPOGRAPHY -----------------*/
 .section7 h3 {
   font-size: var(--h3-font-size);
-  color: white;
+  color: var(--white-clr);
   font-weight: 600;
   font-family: Founders-regular;
 }
@@ -924,21 +920,22 @@ input::placeholder {
 /* Footer Typography---------------- */
 .foot-Links li {
   list-style: none;
-  color: white;
+  color: var(--white-clr);
   opacity: 0.8;
 }
 
 .foot-Links a {
   text-decoration: none;
-  color: white;
+  color: var(--white-clr);
   font-size: 1rem;
   transition: color 0.3s ease-in-out;
+  font-family: Founders-light;
 }
 .accordion .label {
   position: relative;
   font-weight: bold;
   font-size: 1rem;
-  color: white;
+  color: var(--white-clr);
   padding: 1rem 0;
   cursor: pointer;
   font-family: Founders-light;
@@ -953,7 +950,7 @@ input::placeholder {
 
 .terms a {
   font-size: 0.75em;
-  color: white;
+  color: var(--white-clr);
   transition: color 0.3s ease-in-out;
 }
 
@@ -1031,7 +1028,7 @@ input::placeholder {
 .terms i {
   font-family: FontAwesome;
   display: inline-block;
-  color: white;
+  color: var(--white-clr);
   font-size: 1.5em;
   font-style: normal;
 }
@@ -1063,7 +1060,7 @@ input::placeholder {
 }
 
 .terms .social-icons i {
-  color: white;
+  color: var(--white-clr);
   transition: color 0.3s ease-in-out;
 }
 
@@ -1093,7 +1090,7 @@ input::placeholder {
 }
 
 .faq-icon > i:nth-of-type(1) {
-  color: white;
+  color: var(--white-clr);
   font-size: 1.5rem;
   transition: transform 0.16s linear 0s, opacity 0.08s linear 0s;
   transform: rotate(0deg) scale(1);
@@ -1105,7 +1102,7 @@ input::placeholder {
 }
 
 .faq-icon > i:nth-of-type(2) {
-  color: white;
+  color: var(--white-clr);
   font-size: 1.5rem;
   font-family: FontAwesome;
   position: absolute;
@@ -1116,7 +1113,7 @@ input::placeholder {
 }
 
 .faq-icon.active > i:nth-of-type(2) {
-  color: white;
+  color: var(--white-clr);
   font-size: 1.5rem;
   opacity: 1;
   visibility: visible;
@@ -1180,7 +1177,7 @@ input::placeholder {
 }
 
 .info-1 {
-  color: white;
+  color: var(--white-clr);
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -1330,13 +1327,16 @@ input::placeholder {
   border: 1px solid #e1e1e1;
   transition: .3s ease;
 }
+.buttons-container{
+  width: 100%;
+}
 .section-product .customize:hover {
   border: 1px solid black;
 }
 .section-product .select-size {
   background-color: var(--font-clr);
   color: #fff;
-  min-width: 299px;
+width: 100%;
   border: 1px solid black;
   transition: .3s ease;
 }
@@ -1348,7 +1348,7 @@ input::placeholder {
   height: 25px;
 }
 .section-product .customize {
-  min-width: 100%;
+  width: 100%;
   margin-top: 0.5rem;
   background-color: #fff;
 }
@@ -1502,11 +1502,11 @@ input::placeholder {
   list-style: initial;
 }
 .section-product .discription ul li p {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.6rem;
 }
 .section-product .product-accordion .label i {
-  font-size: 17px;
+  font-size: 15px;
   transition: all 0.2s ease-in;
 }
 
@@ -1915,7 +1915,7 @@ input::placeholder {
 }
 .checkBox label {
   text-transform: uppercase;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 3px;
   opacity: 0.8;
@@ -1980,7 +1980,7 @@ input::placeholder {
 }
 .login #continue-btn {
   background-color: #2d2e2c;
-  color: white;
+  color: var(--white-clr);
 }
 .login #continue-btn:hover {
   background-color: #000;
@@ -2358,7 +2358,7 @@ input::placeholder {
     color: var(--font-clr);
     transition: opacity 0.3s ease;
     font-size: 1.5rem;
-    font-family: "Founders-regular";
+    
   }
 
   .section3 .section1 .content h4 {
@@ -2689,6 +2689,9 @@ input::placeholder {
   .product-details .product-name-price{
    display: flex;
   }
+  .frequent-product .container {
+    padding: 0rem 1rem;
+  }
   .cross {
     display: block;
   }
@@ -2749,6 +2752,21 @@ input::placeholder {
   .sticky-product.active .cross {
     display: block;
   }
+  .sticky-product{
+    border-top: 1px solid #e1e1e1;
+  }
+  .sliderBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1rem;
+  }
+.sliderBar span{
+  height: 4px;
+  width: 6rem;
+  background-color: #c5c5c5;
+  border-radius: 50px;
+}
 }
 /* -------------MEDIA QUERY PRODUCT SECTION ENDS--------- */
 

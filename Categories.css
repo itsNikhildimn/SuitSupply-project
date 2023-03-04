@@ -15,7 +15,7 @@
   letter-spacing: 3px;
   margin: 0;
   line-height: 32px;
-  font-family: 'Reckless-regular';
+  
 }
 .about-category .heading h1 {
   font-weight: bold;
@@ -111,9 +111,11 @@
 .filter-items .content2 label {
   padding-left: 1rem;
 }
+.filter-items .content-box{
+  padding:0rem 2rem;
+}
 .filter-items > div {
   border-top: 1px solid #e1e1e1;
-  padding: 1.7rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -230,7 +232,7 @@
 .filter-footer .filter-btn button:last-child {
   background-color: #2d2e2c;
   border: none;
-  color: white;
+  color: var(--white-clr);
 }
 .filter-footer .filter-btn button:last-child:hover {
   background-color: black;
@@ -243,11 +245,14 @@
   opacity: 0;
   transition: .2s ease;
 }
-.filter-accordion.active .content-box{
+.filter-accordion{
+  padding: 1.7rem 2rem;
+}
+.filter-accordion.active + .content-box{
   max-height: 200px;
   visibility: visible;
   opacity: 1;
-  margin-top: 2.5rem;
+  padding:2rem;
 }
 
 

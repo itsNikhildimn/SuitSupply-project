@@ -51,7 +51,7 @@ textSlide.addEventListener('transitionend', () => {
 
     var header = document.querySelector('.header-container');
     var toggled;
-    var threshold = 200;
+    var threshold = 50;
 
     var checkScroll = function () {
         curScroll = w.scrollY || doc.scrollTop;
