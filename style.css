@@ -2821,7 +2821,7 @@ width: 100%;
   top: calc(100% - var(--mobile-info-visible));
   touch-action: auto;
   user-select: none;
-  -webkit-user-drag: none;
+  -webkit-user-drag: none !important;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   transform: translate3d(0px, -662px, 0px);
 }
