@@ -1504,7 +1504,7 @@ width: 100%;
 }
 .section-product .discription {
   color: #898989;
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 0rem 2rem 1.1rem;
 }
 .section-product .discription ul li {
   list-style: initial;
@@ -2816,6 +2816,9 @@ width: 100%;
 }
 .panel-is-visible .pdp-info-top {
   padding-top: 29px;
+}
+.panel-is-visible .pdp-info {
+  height: calc(100% + 15px);
 }
 .pdp-info.is-ready {
   top: calc(100% - var(--mobile-info-visible));
